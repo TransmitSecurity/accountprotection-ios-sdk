@@ -57,7 +57,7 @@ public enum TransmitSecurityAccountProtectionError : Swift.Error {
   }
 }
 public struct TransmitSecurityTriggerActionResponse : Swift.Codable {
-  public let actionToken: Swift.String
+  public let actionToken: Swift.String?
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
