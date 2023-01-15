@@ -1,0 +1,11 @@
+framework module AccountProtection {
+  umbrella header "AccountProtection.h"
+
+  export *
+  module * { export * }
+}
+
+module AccountProtection.Swift {
+  header "AccountProtection-Swift.h"
+  requires objc
+}

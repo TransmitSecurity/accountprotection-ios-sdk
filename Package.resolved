@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TSCoreSDK",
+        "repositoryURL": "https://github.com/TransmitSecurity/core-ios-sdk.git",
+        "state": {
+          "branch": null,
+          "revision": "11ff3bb2719235b368a6b0f19ce37be035b46db9",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
