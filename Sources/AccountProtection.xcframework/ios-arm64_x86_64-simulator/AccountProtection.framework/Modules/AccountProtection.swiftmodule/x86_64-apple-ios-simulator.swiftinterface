@@ -29,7 +29,7 @@ public struct TSActionEventOptions {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class TSAccountProtection : ObjectiveC.NSObject {
   public static func initialize(baseUrl: Swift.String, clientId: Swift.String, userId: Swift.String? = nil)
-  public static func triggerAction(_ action: Swift.String, options: AccountProtection.TSActionEventOptions?, completion: @escaping (Swift.Result<AccountProtection.TransmitSecurityTriggerActionResponse, AccountProtection.TransmitSecurityAccountProtectionError>) -> Swift.Void)
+  public static func triggerAction(_ action: Swift.String, options: AccountProtection.TSActionEventOptions? = nil, completion: @escaping (Swift.Result<AccountProtection.TransmitSecurityTriggerActionResponse, AccountProtection.TransmitSecurityAccountProtectionError>) -> Swift.Void)
   public static func setUserId(_ userId: Swift.String)
   public static func clearUser()
   @objc deinit
@@ -57,7 +57,7 @@ public enum TransmitSecurityAccountProtectionError : Swift.Error {
   }
 }
 public struct TransmitSecurityTriggerActionResponse : Swift.Codable {
-  public let actionToken: Swift.String?
+  public let actionToken: Swift.String
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
