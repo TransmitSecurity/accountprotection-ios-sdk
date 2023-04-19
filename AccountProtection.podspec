@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
     #
   
     spec.name         = "AccountProtection"
-    spec.version      = "2.0.0"
+    spec.version      = "2.0.1"
     spec.summary      = "Account protection is a cloud service embedded into web and mobile apps to help enterprises confidently welcome trusted customers and keep the bad people out."
     spec.homepage     = "https://www.transmitsecurity.co.il"
   
