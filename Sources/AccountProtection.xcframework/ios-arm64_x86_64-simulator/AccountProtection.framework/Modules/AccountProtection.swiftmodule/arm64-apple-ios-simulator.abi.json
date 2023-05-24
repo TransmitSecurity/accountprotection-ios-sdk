@@ -1085,6 +1085,126 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TSUserExtensionsProvider",
+        "printedName": "TSUserExtensionsProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "terminate",
+            "printedName": "terminate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection24TSUserExtensionsProviderP9terminateyyF",
+            "mangledName": "$s17AccountProtection24TSUserExtensionsProviderP9terminateyyF",
+            "moduleName": "AccountProtection",
+            "genericSig": "<τ_0_0 where τ_0_0 : AccountProtection.TSUserExtensionsProvider>",
+            "sugared_genericSig": "<Self where Self : AccountProtection.TSUserExtensionsProvider>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17AccountProtection24TSUserExtensionsProviderP",
+        "mangledName": "$s17AccountProtection24TSUserExtensionsProviderP",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSAcountProtectionUserProvider",
+        "printedName": "TSAcountProtectionUserProvider",
+        "declKind": "Protocol",
+        "usr": "s:17AccountProtection08TSAcountB12UserProviderP",
+        "mangledName": "$s17AccountProtection08TSAcountB12UserProviderP",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSAccountProtectionExtensionsActions",
+        "printedName": "TSAccountProtectionExtensionsActions",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "terminate",
+            "printedName": "terminate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB17ExtensionsActionsC9terminateyyF",
+            "mangledName": "$s17AccountProtection09TSAccountB17ExtensionsActionsC9terminateyyF",
+            "moduleName": "AccountProtection",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17AccountProtection09TSAccountB17ExtensionsActionsC",
+        "mangledName": "$s17AccountProtection09TSAccountB17ExtensionsActionsC",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "TSAcountProtectionUserProvider",
+            "printedName": "TSAcountProtectionUserProvider",
+            "usr": "s:17AccountProtection08TSAcountB12UserProviderP",
+            "mangledName": "$s17AccountProtection08TSAcountB12UserProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TSUserExtensionsProvider",
+            "printedName": "TSUserExtensionsProvider",
+            "usr": "s:17AccountProtection24TSUserExtensionsProviderP",
+            "mangledName": "$s17AccountProtection24TSUserExtensionsProviderP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1616,6 +1736,162 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TSAccountProtectionExtensions",
+        "printedName": "TSAccountProtectionExtensions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSAccountProtectionExtensions",
+                "printedName": "AccountProtection.TSAccountProtectionExtensions",
+                "usr": "c:@M@AccountProtection@objc(cs)TSAccountProtectionExtensions"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17AccountProtection09TSAccountB10ExtensionsC6sharedACvpZ",
+            "mangledName": "$s17AccountProtection09TSAccountB10ExtensionsC6sharedACvpZ",
+            "moduleName": "AccountProtection",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSAccountProtectionExtensions",
+                    "printedName": "AccountProtection.TSAccountProtectionExtensions",
+                    "usr": "c:@M@AccountProtection@objc(cs)TSAccountProtectionExtensions"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17AccountProtection09TSAccountB10ExtensionsC6sharedACvgZ",
+                "mangledName": "$s17AccountProtection09TSAccountB10ExtensionsC6sharedACvgZ",
+                "moduleName": "AccountProtection",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getExtensions",
+            "printedName": "getExtensions()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSAcountProtectionUserProvider",
+                "printedName": "AccountProtection.TSAcountProtectionUserProvider",
+                "usr": "s:17AccountProtection08TSAcountB12UserProviderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB10ExtensionsC03getD0AA08TSAcountB12UserProvider_pyF",
+            "mangledName": "$s17AccountProtection09TSAccountB10ExtensionsC03getD0AA08TSAcountB12UserProvider_pyF",
+            "moduleName": "AccountProtection",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AccountProtection@objc(cs)TSAccountProtectionExtensions",
+        "mangledName": "$s17AccountProtection09TSAccountB10ExtensionsC",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1638,6 +1914,16 @@
         "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "AccountProtection"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -2117,6 +2403,13 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/ModuleInfo\/ModuleInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 282,
+      "length": 8,
+      "value": "\"riskID\""
+    },
+    {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
       "kind": "StringLiteral",
       "offset": 194,
@@ -2297,6 +2590,20 @@
       "offset": 539,
       "length": 7,
       "value": "\"touch\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
+      "kind": "Array",
+      "offset": 876,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
+      "kind": "Array",
+      "offset": 1098,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSUploadEventsRequest.swift",
@@ -2306,6 +2613,34 @@
       "value": "\"events\""
     },
     {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSUploadEventsRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 530,
+      "length": 46,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSUploadEventsRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 541,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSUploadEventsRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 575,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3653,
+      "length": 32,
+      "value": "\"Risk configuration initialized\""
+    },
+    {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/Utils\/TSSwizzler\/TSSwizzler.swift",
       "kind": "Array",
       "offset": 592,
@@ -2313,9 +2648,65 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/Utils\/TSSwizzler\/TSSwizzler.swift",
+      "kind": "StringLiteral",
+      "offset": 1029,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 231,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 453,
+      "length": 6,
+      "value": "1000.0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 462,
+      "length": 6,
+      "value": "1000.0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 545,
+      "length": 6,
+      "value": "1000.0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 734,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 747,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 759,
+      "length": 2,
+      "value": "10"
+    },
+    {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtection.swift",
       "kind": "StringLiteral",
-      "offset": 1243,
+      "offset": 1239,
       "length": 41,
       "value": "\"https:\/\/collect.riskid.security\/device\/\""
     },
@@ -2392,72 +2783,93 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5024,
+      "offset": 5010,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5165,
+      "offset": 5151,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12273,
+      "offset": 6730,
+      "length": 59,
+      "value": "\"triggerActionEvent is ignored because SdkEnabled is false\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 12259,
       "length": 13,
       "value": "\"action_type\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12316,
+      "offset": 12302,
       "length": 16,
       "value": "\"correlation_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12362,
+      "offset": 12348,
       "length": 17,
       "value": "\"claimed_user_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12411,
+      "offset": 12397,
       "length": 19,
       "value": "\"reference_user_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12273,
+      "offset": 12259,
       "length": 13,
       "value": "\"action_type\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12316,
+      "offset": 12302,
       "length": 16,
       "value": "\"correlation_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12362,
+      "offset": 12348,
       "length": 17,
       "value": "\"claimed_user_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12411,
+      "offset": 12397,
       "length": 19,
       "value": "\"reference_user_id\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/Data+Gzip.swift",
+      "kind": "StringLiteral",
+      "offset": 2251,
+      "length": 20,
+      "value": "\"Unknown gzip error\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/Data+Gzip.swift",
+      "kind": "Array",
+      "offset": 2993,
+      "length": 12,
+      "value": "[0x1f, 0x8b]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/Data+Gzip.swift",
@@ -2469,9 +2881,30 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/Data+Gzip.swift",
       "kind": "IntegerLiteral",
+      "offset": 5819,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/Data+Gzip.swift",
+      "kind": "IntegerLiteral",
       "offset": 6993,
       "length": 2,
       "value": "32"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/Data+Gzip.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7702,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/Data+Gzip.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7818,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/Data+Gzip.swift",
@@ -2523,6 +2956,20 @@
       "value": "\"UISystemKeyboardDockController\""
     },
     {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/ScreenNavigationCollector\/TSScreenNavigationCollector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1455,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/ScreenNavigationCollector\/TSScreenNavigationCollector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2644,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSUserIdCollector\/TSUserIdCollector.swift",
       "kind": "StringLiteral",
       "offset": 220,
@@ -2537,11 +2984,249 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 344,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 821,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1292,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1903,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1988,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1995,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2080,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2087,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2094,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "FloatLiteral",
+      "offset": 2153,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2563,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2647,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2654,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2738,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2745,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2752,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2839,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3270,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3354,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3361,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3445,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3452,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3459,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3546,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Disk\/Disk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4036,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
       "kind": "Array",
       "offset": 372,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
+      "kind": "StringLiteral",
+      "offset": 1288,
+      "length": 3,
+      "value": "\"[\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1429,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
+      "kind": "StringLiteral",
+      "offset": 1459,
+      "length": 15,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
+      "kind": "StringLiteral",
+      "offset": 1472,
+      "length": 1,
+      "value": "\"]\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
+      "kind": "StringLiteral",
+      "offset": 1522,
+      "length": 16,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
+      "kind": "StringLiteral",
+      "offset": 1535,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
+      "kind": "StringLiteral",
+      "offset": 1580,
+      "length": 36,
+      "value": "\"Payload attributes list: \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
+      "kind": "StringLiteral",
+      "offset": 1615,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10967,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Carrier\/Carrier.swift",
@@ -2558,6 +3243,69 @@
       "value": "\"configStorageKey\""
     },
     {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Data Manager\/TSDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 784,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Data Manager\/TSDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 815,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Data Manager\/TSDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 864,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Data Manager\/TSDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 873,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Data Manager\/TSDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 904,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Data Manager\/TSDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1340,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Battery\/Battery.swift",
+      "kind": "IntegerLiteral",
+      "offset": 407,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Battery\/Battery.swift",
+      "kind": "IntegerLiteral",
+      "offset": 450,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Battery\/Battery.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1228,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSUserIdCollector\/TSUserIdCollector+EventModel.swift",
       "kind": "StringLiteral",
       "offset": 351,
@@ -2584,6 +3332,167 @@
       "offset": 396,
       "length": 9,
       "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 855,
+      "length": 102,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 865,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 868,
+      "length": 1,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 876,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 879,
+      "length": 1,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 908,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 915,
+      "length": 1,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "Array",
+      "offset": 929,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 932,
+      "length": 1,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 942,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 945,
+      "length": 1,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 953,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 956,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1201,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1206,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1474,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1479,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1627,
+      "length": 43,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1648,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1650,
+      "length": 1,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1667,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1669,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1051,
+      "length": 29,
+      "value": "\"fetch configuraion succeded\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
@@ -2621,6 +3530,48 @@
       "value": "\"conf\""
     },
     {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1943,
+      "length": 51,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1954,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1993,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 2372,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1519,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1534,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 1629,
@@ -2643,10 +3594,269 @@
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2657,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3828,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4514,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "Array",
-      "offset": 9009,
+      "offset": 5224,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "Array",
+      "offset": 5292,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5583,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 5609,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 5691,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6191,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6927,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7067,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "Array",
+      "offset": 8340,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8470,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8569,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8599,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "Array",
+      "offset": 8749,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "Array",
+      "offset": 9002,
       "length": 42,
       "value": "[\"button\", \"UIAlertControllerActionView\"]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9158,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9223,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9612,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9652,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9855,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9882,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9961,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10408,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10423,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10482,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10494,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 10630,
+      "length": 132,
+      "value": "\"Swipe point: \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10650,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 10652,
+      "length": 4,
+      "value": "\" from \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 10666,
+      "length": 1,
+      "value": "\": (\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 10714,
+      "length": 1,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 10760,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/ModuleUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 276,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/ModuleUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 373,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/ModuleUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 472,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/ModuleUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 555,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
@@ -2654,6 +3864,41 @@
       "offset": 1592,
       "length": 33,
       "value": "\"ReachabilityChangedNotification\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 2316,
+      "length": 10,
+      "value": "\"Cellular\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 2370,
+      "length": 6,
+      "value": "\"WiFi\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 2416,
+      "length": 15,
+      "value": "\"No Connection\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 2807,
+      "length": 30,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 2836,
+      "length": 1,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
@@ -2677,6 +3922,496 @@
       "value": "\"uk.co.ashleymills.reachability\""
     },
     {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3716,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4836,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5557,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5633,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5996,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6085,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6273,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6327,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6672,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6838,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7026,
+      "length": 3,
+      "value": "\"W\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7032,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7039,
+      "length": 3,
+      "value": "\"X\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7080,
+      "length": 3,
+      "value": "\"R\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7086,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7136,
+      "length": 3,
+      "value": "\"c\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7142,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7193,
+      "length": 3,
+      "value": "\"t\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7199,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7251,
+      "length": 3,
+      "value": "\"i\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7257,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7308,
+      "length": 3,
+      "value": "\"C\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7314,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7364,
+      "length": 3,
+      "value": "\"D\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7370,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7414,
+      "length": 3,
+      "value": "\"l\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7420,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7458,
+      "length": 3,
+      "value": "\"d\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7464,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7492,
+      "length": 39,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7497,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7501,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7506,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7510,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7514,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7518,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7522,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7526,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 7530,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "Array",
+      "offset": 499,
+      "length": 148,
+      "value": "[\"FridaGadget\", \"frida\", \"cynject\", \"libcycript\"]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 677,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1092,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1155,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "Array",
+      "offset": 1257,
+      "length": 48,
+      "value": "[\"\/usr\/sbin\/frida-server\"]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1420,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1465,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "Array",
+      "offset": 1552,
+      "length": 82,
+      "value": "[27042, 4444]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1740,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1785,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 2221,
+      "length": 11,
+      "value": "\"127.0.0.1\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2356,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2483,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2672,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2696,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2745,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3069,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ReverseEngineeringToolsChecker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3133,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 670,
+      "length": 26,
+      "value": "\"init controller user api\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 910,
+      "length": 33,
+      "value": "\"set user id controller user api\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionController.swift",
+      "kind": "StringLiteral",
+      "offset": 1175,
+      "length": 36,
+      "value": "\"trigger action controller user api\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/ModuleExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 210,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/ModuleExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 17,
+      "value": "\"CFBundleVersion\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/ModuleExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/ModuleExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 481,
+      "length": 27,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/ModuleExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 492,
+      "length": 5,
+      "value": "\" build \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/ModuleExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 507,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ProxyChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 354,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ProxyChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 548,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ProxyChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 619,
+      "length": 11,
+      "value": "\"HTTPProxy\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/ProxyChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 658,
+      "length": 12,
+      "value": "\"HTTPSProxy\""
+    },
+    {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/ScreenNavigationCollector\/TSScreenNavigationCollector+EventModel.swift",
       "kind": "StringLiteral",
       "offset": 413,
@@ -2689,6 +4424,363 @@
       "offset": 413,
       "length": 18,
       "value": "\"interaction_type\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1359,
+      "length": 22,
+      "value": "\"encode events failed\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1756,
+      "length": 25,
+      "value": "\"gzip compression failed\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 2588,
+      "length": 22,
+      "value": "\"Events - \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 2609,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 2967,
+      "length": 23,
+      "value": "\"encrypt events failed\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 4832,
+      "length": 12,
+      "value": "\"compressed\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 5045,
+      "length": 33,
+      "value": "\"Failed to encode encrypted data\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 5531,
+      "length": 9,
+      "value": "\" \n\t\r\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 5604,
+      "length": 20,
+      "value": "\"Payload: \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 5623,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/DataSource\/TSEventsDataSourceProvider.swift",
+      "kind": "Array",
+      "offset": 519,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/DataSource\/TSEventsDataSourceProvider.swift",
+      "kind": "Array",
+      "offset": 787,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/DataSource\/TSEventsDataSourceProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1231,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/DataSource\/TSEventsDataSourceProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1360,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1400,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 1431,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "Array",
+      "offset": 1521,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 2523,
+      "length": 4,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "Array",
+      "offset": 2821,
+      "length": 2704,
+      "value": "[\"\/usr\/sbin\/frida-server\", \"\/etc\/apt\/sources.list.d\/electra.list\", \"\/etc\/apt\/sources.list.d\/sileo.sources\", \"\/.bootstrapped_electra\", \"\/usr\/lib\/libjailbreak.dylib\", \"\/jb\/lzma\", \"\/.cydia_no_stash\", \"\/.installed_unc0ver\", \"\/jb\/offsets.plist\", \"\/usr\/share\/jailbreak\/injectme.plist\", \"\/etc\/apt\/undecimus\/undecimus.list\", \"\/var\/lib\/dpkg\/info\/mobilesubstrate.md5sums\", \"\/Library\/MobileSubstrate\/MobileSubstrate.dylib\", \"\/jb\/jailbreakd.plist\", \"\/jb\/amfid_payload.dylib\", \"\/jb\/libjailbreak.dylib\", \"\/usr\/libexec\/cydia\/firmware.sh\", \"\/var\/lib\/cydia\", \"\/etc\/apt\", \"\/private\/var\/lib\/apt\", \"\/private\/var\/Users\/\", \"\/var\/log\/apt\", \"\/Applications\/Cydia.app\", \"\/private\/var\/stash\", \"\/private\/var\/lib\/apt\/\", \"\/private\/var\/lib\/cydia\", \"\/private\/var\/cache\/apt\/\", \"\/private\/var\/log\/syslog\", \"\/private\/var\/tmp\/cydia.log\", \"\/Applications\/Icy.app\", \"\/Applications\/MxTube.app\", \"\/Applications\/RockApp.app\", \"\/Applications\/blackra1n.app\", \"\/Applications\/SBSettings.app\", \"\/Applications\/FakeCarrier.app\", \"\/Applications\/WinterBoard.app\", \"\/Applications\/IntelliScreen.app\", \"\/private\/var\/mobile\/Library\/SBSettings\/Themes\", \"\/Library\/MobileSubstrate\/CydiaSubstrate.dylib\", \"\/System\/Library\/LaunchDaemons\/com.ikey.bbot.plist\", \"\/Library\/MobileSubstrate\/DynamicLibraries\/Veency.plist\", \"\/Library\/MobileSubstrate\/DynamicLibraries\/LiveClock.plist\", \"\/System\/Library\/LaunchDaemons\/com.saurik.Cydia.Startup.plist\", \"\/Applications\/Sileo.app\", \"\/var\/binpack\", \"\/Library\/PreferenceBundles\/LibertyPref.bundle\", \"\/Library\/PreferenceBundles\/ShadowPreferences.bundle\", \"\/Library\/PreferenceBundles\/ABypassPrefs.bundle\", \"\/Library\/PreferenceBundles\/FlyJBPrefs.bundle\", \"\/usr\/lib\/libhooker.dylib\", \"\/usr\/lib\/libsubstitute.dylib\", \"\/usr\/lib\/substrate\", \"\/usr\/lib\/TweakInject\", \"\/var\/binpack\/Applications\/loader.app\", \"\/Applications\/FlyJB.app\", \"\/Applications\/Zebra.app\"]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "Array",
+      "offset": 5668,
+      "length": 236,
+      "value": "[\"\/bin\/bash\", \"\/usr\/sbin\/sshd\", \"\/usr\/libexec\/ssh-keysign\", \"\/bin\/sh\", \"\/etc\/ssh\/sshd_config\", \"\/usr\/libexec\/sftp-server\", \"\/usr\/bin\/ssh\"]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6030,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 6037,
+      "length": 33,
+      "value": "\"Suspicious file exists: \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 6069,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "Array",
+      "offset": 6226,
+      "length": 236,
+      "value": "[\"\/.installed_unc0ver\", \"\/.bootstrapped_electra\", \"\/Applications\/Cydia.app\", \"\/Library\/MobileSubstrate\/MobileSubstrate.dylib\", \"\/etc\/apt\", \"\/var\/log\/apt\"]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "Array",
+      "offset": 6605,
+      "length": 97,
+      "value": "[\"\/bin\/bash\", \"\/usr\/sbin\/sshd\", \"\/usr\/bin\/ssh\"]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6833,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 6840,
+      "length": 40,
+      "value": "\"Suspicious file can be opened: \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 6879,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "Array",
+      "offset": 7040,
+      "length": 94,
+      "value": "[\"\/\", \"\/root\/\", \"\/private\/\", \"\/jb\/\"]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 7418,
+      "length": 16,
+      "value": "\"AmIJailbroken?\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7481,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7654,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 7661,
+      "length": 35,
+      "value": "\"Wrote to restricted path: \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 7695,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7883,
+      "length": 2,
+      "value": "-2"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 7930,
+      "length": 6,
+      "value": "\"fork\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8113,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8145,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "Array",
+      "offset": 8420,
+      "length": 276,
+      "value": "[\"\/var\/lib\/undecimus\/apt\", \"\/Applications\", \"\/Library\/Ringtones\", \"\/Library\/Wallpaper\", \"\/usr\/arm-apple-darwin9\", \"\/usr\/include\", \"\/usr\/libexec\", \"\/usr\/share\"]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8901,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 8908,
+      "length": 66,
+      "value": "\"Non standard symbolic link detected: \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 8953,
+      "length": 6,
+      "value": "\" points to \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 8973,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "Array",
+      "offset": 9149,
+      "length": 669,
+      "value": "[\"SubstrateLoader.dylib\", \"SSLKillSwitch2.dylib\", \"SSLKillSwitch.dylib\", \"MobileSubstrate.dylib\", \"TweakInject.dylib\", \"CydiaSubstrate\", \"cynject\", \"CustomWidgetIcons\", \"PreferenceLoader\", \"RocketBootstrap\", \"WeeLoader\", \"\/.file\", \"libhooker\", \"SubstrateInserter\", \"SubstrateBootstrap\", \"ABypass\", \"FlyJB\", \"Substitute\", \"Cephei\", \"Electra\"]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9848,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10263,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 10270,
+      "length": 45,
+      "value": "\"Suspicious library loaded: \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 10314,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Application\/Application.swift",
+      "kind": "StringLiteral",
+      "offset": 363,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Application\/Application.swift",
+      "kind": "StringLiteral",
+      "offset": 506,
+      "length": 17,
+      "value": "\"CFBundleVersion\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Application\/Application.swift",
+      "kind": "StringLiteral",
+      "offset": 643,
+      "length": 14,
+      "value": "\"CFBundleName\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
@@ -2731,6 +4823,27 @@
       "offset": 339,
       "length": 6,
       "value": "\"text\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
+      "kind": "StringLiteral",
+      "offset": 646,
+      "length": 7,
+      "value": "\"touch\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
+      "kind": "StringLiteral",
+      "offset": 686,
+      "length": 7,
+      "value": "\"click\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
+      "kind": "StringLiteral",
+      "offset": 726,
+      "length": 7,
+      "value": "\"input\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
@@ -2738,6 +4851,20 @@
       "offset": 1692,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5561,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5583,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/observers\/TSConfigurationObserver.swift",
@@ -2887,6 +5014,27 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/observers\/TSConfigurationObserver.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2997,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/observers\/TSConfigurationObserver.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3694,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/observers\/TSConfigurationObserver.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11085,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/TSDeviceMetadata.swift",
       "kind": "IntegerLiteral",
       "offset": 1154,
@@ -2948,6 +5096,167 @@
       "offset": 1199,
       "length": 4,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/EmulatorChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 392,
+      "length": 23,
+      "value": "\"SIMULATOR_DEVICE_NAME\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/EmulatorChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 537,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/controller\/TSConfigurationController.swift",
+      "kind": "StringLiteral",
+      "offset": 1376,
+      "length": 31,
+      "value": "\"Risk configuration from cache\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/controller\/TSConfigurationController.swift",
+      "kind": "StringLiteral",
+      "offset": 1855,
+      "length": 26,
+      "value": "\"fetch config from server\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/controller\/TSConfigurationController.swift",
+      "kind": "StringLiteral",
+      "offset": 2271,
+      "length": 85,
+      "value": "\"Account Protection SDK \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/controller\/TSConfigurationController.swift",
+      "kind": "StringLiteral",
+      "offset": 2323,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/controller\/TSConfigurationController.swift",
+      "kind": "StringLiteral",
+      "offset": 2326,
+      "length": 3,
+      "value": "\" was successfully initialized\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/controller\/TSConfigurationController.swift",
+      "kind": "StringLiteral",
+      "offset": 3506,
+      "length": 434,
+      "value": "\"\n ---------------------------------------------------------------------------------------------------------------------\n ****************************** Account Protection SDK \""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/controller\/TSConfigurationController.swift",
+      "kind": "StringLiteral",
+      "offset": 3733,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/controller\/TSConfigurationController.swift",
+      "kind": "StringLiteral",
+      "offset": 3736,
+      "length": 3,
+      "value": "\" was successfully initialized ******************************\n ---------------------------------------------------------------------------------------------------------------------\n\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1230,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1312,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1319,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1401,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1408,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1415,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
+      "kind": "FloatLiteral",
+      "offset": 1474,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2718,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2781,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
+      "kind": "Array",
+      "offset": 5908,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
+      "kind": "Array",
+      "offset": 6796,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8416,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8484,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
@@ -2957,6 +5266,20 @@
       "value": "1"
     },
     {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Network.swift",
+      "kind": "BooleanLiteral",
+      "offset": 444,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Network\/Network.swift",
+      "kind": "BooleanLiteral",
+      "offset": 776,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector+EventModel.swift",
       "kind": "StringLiteral",
       "offset": 672,
@@ -3095,6 +5418,20 @@
       "offset": 3732,
       "length": 13,
       "value": "\"target_type\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5158,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5173,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
