@@ -46,6 +46,20 @@ public enum TSProtectionError : Swift.Error {
     get
   }
 }
+public protocol TSUserExtensionsProvider {
+  func terminate()
+}
+public protocol TSAcountProtectionUserProvider {
+}
+@_hasMissingDesignatedInitializers final public class TSAccountProtectionExtensionsActions : AccountProtection.TSAcountProtectionUserProvider, AccountProtection.TSUserExtensionsProvider {
+  final public func terminate()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class TSAccountProtectionExtensions : ObjectiveC.NSObject {
+  public static let shared: AccountProtection.TSAccountProtectionExtensions
+  final public func getExtensions() -> any AccountProtection.TSAcountProtectionUserProvider
+  @objc deinit
+}
 public enum TransmitSecurityAccountProtectionError : Swift.Error {
   case disabled
   case internalError

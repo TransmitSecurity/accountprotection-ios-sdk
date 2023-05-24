@@ -1085,6 +1085,126 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TSUserExtensionsProvider",
+        "printedName": "TSUserExtensionsProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "terminate",
+            "printedName": "terminate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection24TSUserExtensionsProviderP9terminateyyF",
+            "mangledName": "$s17AccountProtection24TSUserExtensionsProviderP9terminateyyF",
+            "moduleName": "AccountProtection",
+            "genericSig": "<τ_0_0 where τ_0_0 : AccountProtection.TSUserExtensionsProvider>",
+            "sugared_genericSig": "<Self where Self : AccountProtection.TSUserExtensionsProvider>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17AccountProtection24TSUserExtensionsProviderP",
+        "mangledName": "$s17AccountProtection24TSUserExtensionsProviderP",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSAcountProtectionUserProvider",
+        "printedName": "TSAcountProtectionUserProvider",
+        "declKind": "Protocol",
+        "usr": "s:17AccountProtection08TSAcountB12UserProviderP",
+        "mangledName": "$s17AccountProtection08TSAcountB12UserProviderP",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSAccountProtectionExtensionsActions",
+        "printedName": "TSAccountProtectionExtensionsActions",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "terminate",
+            "printedName": "terminate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB17ExtensionsActionsC9terminateyyF",
+            "mangledName": "$s17AccountProtection09TSAccountB17ExtensionsActionsC9terminateyyF",
+            "moduleName": "AccountProtection",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17AccountProtection09TSAccountB17ExtensionsActionsC",
+        "mangledName": "$s17AccountProtection09TSAccountB17ExtensionsActionsC",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "TSAcountProtectionUserProvider",
+            "printedName": "TSAcountProtectionUserProvider",
+            "usr": "s:17AccountProtection08TSAcountB12UserProviderP",
+            "mangledName": "$s17AccountProtection08TSAcountB12UserProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TSUserExtensionsProvider",
+            "printedName": "TSUserExtensionsProvider",
+            "usr": "s:17AccountProtection24TSUserExtensionsProviderP",
+            "mangledName": "$s17AccountProtection24TSUserExtensionsProviderP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1616,6 +1736,162 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TSAccountProtectionExtensions",
+        "printedName": "TSAccountProtectionExtensions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSAccountProtectionExtensions",
+                "printedName": "AccountProtection.TSAccountProtectionExtensions",
+                "usr": "c:@M@AccountProtection@objc(cs)TSAccountProtectionExtensions"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17AccountProtection09TSAccountB10ExtensionsC6sharedACvpZ",
+            "mangledName": "$s17AccountProtection09TSAccountB10ExtensionsC6sharedACvpZ",
+            "moduleName": "AccountProtection",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSAccountProtectionExtensions",
+                    "printedName": "AccountProtection.TSAccountProtectionExtensions",
+                    "usr": "c:@M@AccountProtection@objc(cs)TSAccountProtectionExtensions"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17AccountProtection09TSAccountB10ExtensionsC6sharedACvgZ",
+                "mangledName": "$s17AccountProtection09TSAccountB10ExtensionsC6sharedACvgZ",
+                "moduleName": "AccountProtection",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getExtensions",
+            "printedName": "getExtensions()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSAcountProtectionUserProvider",
+                "printedName": "AccountProtection.TSAcountProtectionUserProvider",
+                "usr": "s:17AccountProtection08TSAcountB12UserProviderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB10ExtensionsC03getD0AA08TSAcountB12UserProvider_pyF",
+            "mangledName": "$s17AccountProtection09TSAccountB10ExtensionsC03getD0AA08TSAcountB12UserProvider_pyF",
+            "moduleName": "AccountProtection",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AccountProtection@objc(cs)TSAccountProtectionExtensions",
+        "mangledName": "$s17AccountProtection09TSAccountB10ExtensionsC",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1638,6 +1914,16 @@
         "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "AccountProtection"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -2350,7 +2636,7 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationManager.swift",
       "kind": "StringLiteral",
-      "offset": 3614,
+      "offset": 3653,
       "length": 32,
       "value": "\"Risk configuration initialized\""
     },
@@ -2371,56 +2657,56 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 649,
+      "offset": 231,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
       "kind": "FloatLiteral",
-      "offset": 742,
+      "offset": 453,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
       "kind": "FloatLiteral",
-      "offset": 751,
+      "offset": 462,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
       "kind": "FloatLiteral",
-      "offset": 834,
+      "offset": 545,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1023,
+      "offset": 734,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1036,
+      "offset": 747,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/DateExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1048,
+      "offset": 759,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtection.swift",
       "kind": "StringLiteral",
-      "offset": 1243,
+      "offset": 1239,
       "length": 41,
       "value": "\"https:\/\/collect.riskid.security\/device\/\""
     },
@@ -2497,84 +2783,77 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1304,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5026,
+      "offset": 5010,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5167,
+      "offset": 5151,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 6746,
+      "offset": 6730,
       "length": 59,
       "value": "\"triggerActionEvent is ignored because SdkEnabled is false\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12275,
+      "offset": 12259,
       "length": 13,
       "value": "\"action_type\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12318,
+      "offset": 12302,
       "length": 16,
       "value": "\"correlation_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12364,
+      "offset": 12348,
       "length": 17,
       "value": "\"claimed_user_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12413,
+      "offset": 12397,
       "length": 19,
       "value": "\"reference_user_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12275,
+      "offset": 12259,
       "length": 13,
       "value": "\"action_type\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12318,
+      "offset": 12302,
       "length": 16,
       "value": "\"correlation_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12364,
+      "offset": 12348,
       "length": 17,
       "value": "\"claimed_user_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12413,
+      "offset": 12397,
       "length": 19,
       "value": "\"reference_user_id\""
     },
@@ -2889,63 +3168,63 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
       "kind": "StringLiteral",
-      "offset": 1348,
+      "offset": 1288,
       "length": 3,
       "value": "\"[\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
       "kind": "IntegerLiteral",
-      "offset": 1489,
+      "offset": 1429,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
       "kind": "StringLiteral",
-      "offset": 1519,
+      "offset": 1459,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
       "kind": "StringLiteral",
-      "offset": 1532,
+      "offset": 1472,
       "length": 1,
       "value": "\"]\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
       "kind": "StringLiteral",
-      "offset": 1582,
+      "offset": 1522,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
       "kind": "StringLiteral",
-      "offset": 1595,
+      "offset": 1535,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
       "kind": "StringLiteral",
-      "offset": 1640,
+      "offset": 1580,
       "length": 36,
       "value": "\"Payload attributes list: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
       "kind": "StringLiteral",
-      "offset": 1675,
+      "offset": 1615,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
       "kind": "BooleanLiteral",
-      "offset": 11027,
+      "offset": 10967,
       "length": 4,
       "value": "true"
     },
@@ -3371,13 +3650,6 @@
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6156,
-      "length": 8,
-      "value": "10000000"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "BooleanLiteral",
       "offset": 6191,
       "length": 5,
@@ -3386,175 +3658,175 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 6934,
+      "offset": 6927,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 7074,
+      "offset": 7067,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "Array",
-      "offset": 8347,
+      "offset": 8340,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 8477,
+      "offset": 8470,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 8576,
+      "offset": 8569,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 8606,
+      "offset": 8599,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "Array",
-      "offset": 8756,
+      "offset": 8749,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "Array",
-      "offset": 9009,
+      "offset": 9002,
       "length": 42,
       "value": "[\"button\", \"UIAlertControllerActionView\"]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 9165,
+      "offset": 9158,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 9230,
+      "offset": 9223,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 9619,
+      "offset": 9612,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 9659,
+      "offset": 9652,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 9862,
+      "offset": 9855,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 9889,
+      "offset": 9882,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 9968,
+      "offset": 9961,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 10415,
+      "offset": 10408,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 10430,
+      "offset": 10423,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 10489,
+      "offset": 10482,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 10501,
+      "offset": 10494,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 10637,
+      "offset": 10630,
       "length": 132,
       "value": "\"Swipe point: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 10657,
+      "offset": 10650,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 10659,
+      "offset": 10652,
       "length": 4,
       "value": "\" from \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 10673,
+      "offset": 10666,
       "length": 1,
       "value": "\": (\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 10721,
+      "offset": 10714,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 10767,
+      "offset": 10760,
       "length": 1,
       "value": "\")\""
     },
@@ -4156,70 +4428,70 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1356,
+      "offset": 1359,
       "length": 22,
       "value": "\"encode events failed\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1753,
+      "offset": 1756,
       "length": 25,
       "value": "\"gzip compression failed\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2585,
+      "offset": 2588,
       "length": 22,
       "value": "\"Events - \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2606,
+      "offset": 2609,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2964,
+      "offset": 2967,
       "length": 23,
       "value": "\"encrypt events failed\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
       "kind": "StringLiteral",
-      "offset": 4835,
+      "offset": 4832,
       "length": 12,
       "value": "\"compressed\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5048,
+      "offset": 5045,
       "length": 33,
       "value": "\"Failed to encode encrypted data\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5534,
+      "offset": 5531,
       "length": 9,
       "value": "\" \n\t\r\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5607,
+      "offset": 5604,
       "length": 20,
       "value": "\"Payload: \""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/Server\/TSEventsServerProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5626,
+      "offset": 5623,
       "length": 1,
       "value": "\"\""
     },
@@ -4740,6 +5012,27 @@
       "offset": 2955,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/observers\/TSConfigurationObserver.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2997,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/observers\/TSConfigurationObserver.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3694,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/observers\/TSConfigurationObserver.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11085,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/TSDeviceMetadata.swift",

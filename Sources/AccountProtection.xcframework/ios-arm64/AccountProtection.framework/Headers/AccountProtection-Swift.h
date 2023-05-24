@@ -290,6 +290,13 @@ SWIFT_CLASS("_TtC17AccountProtection19TSAccountProtection")
 @end
 
 
+SWIFT_CLASS("_TtC17AccountProtection29TSAccountProtectionExtensions")
+@interface TSAccountProtectionExtensions : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 #endif
 #if defined(__cplusplus)
 #endif
