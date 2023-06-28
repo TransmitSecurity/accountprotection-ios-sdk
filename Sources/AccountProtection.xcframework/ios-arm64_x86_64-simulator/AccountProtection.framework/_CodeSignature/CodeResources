@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AccountProtection-Swift.h</key>
 		<data>
-		9CdpukBlwJypBTeNa9CmWBsZ8q4=
+		chVt9+lSBUsfKUb731CYlAZhHfw=
 		</data>
 		<key>Headers/AccountProtection.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DKp92PwaJOuHrZUdbRaxWnFNy/4=
+		/UwQYT6GKJw3p5whozlamgoyBAw=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Wyoc8hTaRy9YYFMI/4JnbcWmAtc=
+		ulA29O2Lu0+ZeBaxja3GGBAfvTg=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dN7/wgPoo8mrb7VpnXNaluVxF3k=
+		FDi4yosX2M80GM5UDYJ+01dThKQ=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		80nKF/CIDSf6bubKLh+Fr7NzJ0o=
+		SkG9Jw86VJ5WBlI9hdYJYUjFtXA=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dN7/wgPoo8mrb7VpnXNaluVxF3k=
+		FDi4yosX2M80GM5UDYJ+01dThKQ=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Cf2amIErI6PpdJFw9Y9vUWJlS7o=
+		gMgL2Nvr1ufqmymdP5nqYGAUDZo=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Wyoc8hTaRy9YYFMI/4JnbcWmAtc=
+		ulA29O2Lu0+ZeBaxja3GGBAfvTg=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		p+6Wmm4L7YBEdV0AeoaVfOIQkZg=
+		RtTHvROFQVSHrohmNsyl2fwl/9Y=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zWMnVhM4qkWoTTDtPyvh8X5gdBw=
+		DsSSgiNhYToSwlV0VkF8kHsqe10=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		p+6Wmm4L7YBEdV0AeoaVfOIQkZg=
+		RtTHvROFQVSHrohmNsyl2fwl/9Y=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		og5KYs1kuC+ov5wfhnBI/f9eleA=
+		QHKWZiTq19DzEp1tr7BF8o+EVzY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EclOZvtHSciALNMfWWv7xY67Dixi5WukycXB8pGQ6jU=
+			xxEpVdsngCnbH5yIZCSO0mnGQqhoiNxFUn1qNA0SnGo=
 			</data>
 		</dict>
 		<key>Headers/AccountProtection.h</key>
@@ -81,70 +81,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KHphU30SVpZZUxw+oh7gtTtJId4PJBKdUt38gszxBOc=
+			7MP1wQxFp53+R1djiKKZzSbtfVpll7829/PMgQcgSiI=
 			</data>
 		</dict>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CW0TZnWgMxz9xsmqYUfJVMDYJA1C9wXS7VP8GfCFZ4k=
+			gc7wN2KRcnooQdsHoLTHLj7is7noDv+8tKzwy3QmPzg=
 			</data>
 		</dict>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pR/OAKMKd3w9uv8SHobBkFa4jAd0pdCHzwYYjL6/zL8=
+			LA7mMrsPC7VVDIf/yeRsIu0VPieGgmxHWWQQPO0tnh0=
 			</data>
 		</dict>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CW0TZnWgMxz9xsmqYUfJVMDYJA1C9wXS7VP8GfCFZ4k=
+			gc7wN2KRcnooQdsHoLTHLj7is7noDv+8tKzwy3QmPzg=
 			</data>
 		</dict>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8skSNUo+u5v4moj7NalVOmUw+5w+neKijnvWDG13nTA=
+			6ZFtaJcjHs4sKotUWGtOGmmz4Yy9KimtUf8yZuQVmgc=
 			</data>
 		</dict>
 		<key>Modules/AccountProtection.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KHphU30SVpZZUxw+oh7gtTtJId4PJBKdUt38gszxBOc=
+			7MP1wQxFp53+R1djiKKZzSbtfVpll7829/PMgQcgSiI=
 			</data>
 		</dict>
 		<key>Modules/AccountProtection.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MlLCsPf3wXvMD61/lS+SjLVjSRDwiSr9E1rGFcc9TqQ=
+			Z/qlNY3nMia7DrbSMhwfHWYZIbT1tV7CRZ9n5Azq/Vs=
 			</data>
 		</dict>
 		<key>Modules/AccountProtection.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KINfiGhmdfJKdSuMdOif+ZuQ5QTnmq89M2ol94l4b2A=
+			sYBjdOCyoNeultvIZHDylNORRwAo4dnY9swDIFkybM8=
 			</data>
 		</dict>
 		<key>Modules/AccountProtection.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MlLCsPf3wXvMD61/lS+SjLVjSRDwiSr9E1rGFcc9TqQ=
+			Z/qlNY3nMia7DrbSMhwfHWYZIbT1tV7CRZ9n5Azq/Vs=
 			</data>
 		</dict>
 		<key>Modules/AccountProtection.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X8c/9k0eNmHnNdOLDDRXayCXE4Wd83aFS278IHTo80Y=
+			3t+PRZbWQ18AAR6Ewfgm11MCI1HXIj1GPNyZ1yCYkBU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
