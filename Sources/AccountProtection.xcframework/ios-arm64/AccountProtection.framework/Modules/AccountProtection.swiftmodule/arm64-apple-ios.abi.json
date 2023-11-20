@@ -6165,29 +6165,36 @@
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/DataSource\/TSEventsDataSourceProvider.swift",
+      "kind": "Dictionary",
+      "offset": 323,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/DataSource\/TSEventsDataSourceProvider.swift",
       "kind": "Array",
-      "offset": 519,
+      "offset": 577,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/DataSource\/TSEventsDataSourceProvider.swift",
       "kind": "Array",
-      "offset": 787,
+      "offset": 875,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/DataSource\/TSEventsDataSourceProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 1231,
+      "offset": 1359,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/DataSource\/TSEventsDataSourceProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1360,
+      "offset": 1498,
       "length": 4,
       "value": "true"
     },
