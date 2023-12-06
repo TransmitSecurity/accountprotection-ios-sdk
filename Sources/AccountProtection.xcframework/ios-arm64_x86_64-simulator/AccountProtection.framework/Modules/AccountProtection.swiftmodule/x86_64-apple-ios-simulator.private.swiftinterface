@@ -31,7 +31,7 @@ public struct TSActionEventOptions {
   public init(correlationId: Swift.String?, claimUserId: Swift.String?, referenceUserId: Swift.String?)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class TSAccountProtection : ObjectiveC.NSObject {
-  public static func initialize(baseUrl: Swift.String = "https://collect.riskid.security/device/", clientId: Swift.String, userId: Swift.String? = nil)
+  public static func initialize(baseUrl: Swift.String = "https://api.transmitsecurity.io/", clientId: Swift.String, userId: Swift.String? = nil)
   public static func triggerAction(_ action: Swift.String, options: AccountProtection.TSActionEventOptions? = nil, completion: @escaping (Swift.Result<AccountProtection.TransmitSecurityTriggerActionResponse, AccountProtection.TransmitSecurityAccountProtectionError>) -> Swift.Void)
   public static func setUserId(_ userId: Swift.String)
   public static func clearUser()
