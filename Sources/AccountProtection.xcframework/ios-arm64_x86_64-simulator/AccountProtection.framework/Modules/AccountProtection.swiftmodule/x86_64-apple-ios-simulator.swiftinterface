@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AccountProtection
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -20,12 +20,14 @@ import TSCoreSDK
 import UIKit
 import _Concurrency
 import _StringProcessing
-import _SwiftConcurrencyShims
 import zlib
 public struct TSTriggerActionResponse {
   public let token: Swift.String
 }
 public struct TSTriggerActionError : Swift.Error {
+}
+public enum TSAccountProtectionError : Swift.Error {
+  case `internal`(Swift.Error?)
 }
 public struct TSActionEventOptions {
   public init(correlationId: Swift.String?, claimUserId: Swift.String?, referenceUserId: Swift.String?, transactionData: AccountProtection.TSTransactionData? = nil)
@@ -33,13 +35,13 @@ public struct TSActionEventOptions {
 public struct TSTransactionData : Swift.Codable {
   public struct Payer : Swift.Codable {
     public init(name: Swift.String?, branchIdentifier: Swift.String?, accountNumber: Swift.String?)
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
   public struct Payee : Swift.Codable {
     public init(name: Swift.String?, bankIdentifier: Swift.String?, branchIdentifier: Swift.String?, accountNumber: Swift.String?)
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
   public init(amount: Swift.Double, currency: Swift.String, reason: Swift.String?, transactionDate: Swift.Int64?, payer: AccountProtection.TSTransactionData.Payer?, payee: AccountProtection.TSTransactionData.Payee?)
   public let amount: Swift.Double
@@ -48,10 +50,13 @@ public struct TSTransactionData : Swift.Codable {
   public let transactionDate: Swift.Int64?
   public let payer: AccountProtection.TSTransactionData.Payer?
   public let payee: AccountProtection.TSTransactionData.Payee?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class TSAccountProtection : ObjectiveC.NSObject {
+  public typealias CompletionResult = Swift.Result<Swift.Void, AccountProtection.TSAccountProtectionError>
+  public typealias Completion = (AccountProtection.TSAccountProtection.CompletionResult) -> Swift.Void
+  public static func initialize(baseUrl: Swift.String = "https://collect.riskid.security/device/", clientId: Swift.String, userId: Swift.String? = nil, completion: @escaping AccountProtection.TSAccountProtection.Completion)
   public static func initialize(baseUrl: Swift.String = "https://api.transmitsecurity.io/", clientId: Swift.String, userId: Swift.String? = nil)
   public static func triggerAction(_ action: Swift.String, options: AccountProtection.TSActionEventOptions? = nil, completion: @escaping (Swift.Result<AccountProtection.TransmitSecurityTriggerActionResponse, AccountProtection.TransmitSecurityAccountProtectionError>) -> Swift.Void)
   public static func setUserId(_ userId: Swift.String)
@@ -114,8 +119,8 @@ public enum TransmitSecurityAccountProtectionError : Swift.Error {
 }
 public struct TransmitSecurityTriggerActionResponse : Swift.Codable {
   public let actionToken: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public protocol RawPointerConvertible {
   static func loadValue(_ from: Swift.UnsafeRawPointer, of size: Swift.Int) -> Self
