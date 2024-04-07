@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
     #
   
     spec.name         = "AccountProtection"
-    spec.version      = "2.0.7"
+    spec.version      = "2.1.2"
     spec.summary      = "Account protection is a cloud service embedded into web and mobile apps to help enterprises confidently welcome trusted customers and keep the bad people out."
     spec.homepage     = "https://www.transmitsecurity.co.il"
   
@@ -134,7 +134,7 @@ Pod::Spec.new do |spec|
     # spec.requires_arc = true
   
     # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-    spec.dependency "TSCoreSDK", "~> 1.0.18"
+    spec.dependency "TSCoreSDK", "~> 1.0.21"
 
     spec.pod_target_xcconfig = {
       'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
