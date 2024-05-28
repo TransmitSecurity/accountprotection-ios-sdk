@@ -1,7 +1,7 @@
 framework module AccountProtection {
   umbrella header "AccountProtection.h"
-  export *
 
+  export *
   module * { export * }
 }
 
