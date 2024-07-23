@@ -21,6 +21,9 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import zlib
+public struct TSDrsConfiguration {
+  public init(configurationFileName: Swift.String)
+}
 public struct TSTriggerActionResponse {
   public let token: Swift.String
 }
@@ -59,7 +62,7 @@ public struct TSTransactionData : Swift.Codable {
   public typealias SessionTokenCompletion = (Swift.String) -> Swift.Void
   public static func initialize(baseUrl: Swift.String = "https://collect.riskid.security/device/", clientId: Swift.String, userId: Swift.String? = nil, completion: @escaping AccountProtection.TSAccountProtection.Completion)
   public static func initialize(baseUrl: Swift.String = "https://api.transmitsecurity.io/", clientId: Swift.String, userId: Swift.String? = nil)
-  public static func initializeSDK(userId: Swift.String? = nil, completion: AccountProtection.TSAccountProtection.Completion? = nil) throws
+  public static func initializeSDK(userId: Swift.String? = nil, completion: AccountProtection.TSAccountProtection.Completion? = nil, configuration: AccountProtection.TSDrsConfiguration? = nil) throws
   public static func triggerAction(_ action: Swift.String, options: AccountProtection.TSActionEventOptions? = nil, completion: @escaping (Swift.Result<AccountProtection.TransmitSecurityTriggerActionResponse, AccountProtection.TransmitSecurityAccountProtectionError>) -> Swift.Void)
   public static func setUserId(_ userId: Swift.String)
   public static func clearUser()

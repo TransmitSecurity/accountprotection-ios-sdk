@@ -118,6 +118,48 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "TSDrsConfiguration",
+        "printedName": "TSDrsConfiguration",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configurationFileName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSDrsConfiguration",
+                "printedName": "AccountProtection.TSDrsConfiguration",
+                "usr": "s:17AccountProtection18TSDrsConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17AccountProtection18TSDrsConfigurationV21configurationFileNameACSS_tcfc",
+            "mangledName": "$s17AccountProtection18TSDrsConfigurationV21configurationFileNameACSS_tcfc",
+            "moduleName": "AccountProtection",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17AccountProtection18TSDrsConfigurationV",
+        "mangledName": "$s17AccountProtection18TSDrsConfigurationV",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "TSTriggerActionResponse",
         "printedName": "TSTriggerActionResponse",
         "children": [
@@ -1323,7 +1365,7 @@
           {
             "kind": "Function",
             "name": "initializeSDK",
-            "printedName": "initializeSDK(userId:completion:)",
+            "printedName": "initializeSDK(userId:completion:configuration:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1384,11 +1426,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AccountProtection.TSDrsConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSDrsConfiguration",
+                    "printedName": "AccountProtection.TSDrsConfiguration",
+                    "usr": "s:17AccountProtection18TSDrsConfigurationV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17AccountProtection09TSAccountB0C13initializeSDK6userId10completionySSSg_ys6ResultOyytAA0cB5ErrorOGcSgtKFZ",
-            "mangledName": "$s17AccountProtection09TSAccountB0C13initializeSDK6userId10completionySSSg_ys6ResultOyytAA0cB5ErrorOGcSgtKFZ",
+            "usr": "s:17AccountProtection09TSAccountB0C13initializeSDK6userId10completion13configurationySSSg_ys6ResultOyytAA0cB5ErrorOGcSgAA18TSDrsConfigurationVSgtKFZ",
+            "mangledName": "$s17AccountProtection09TSAccountB0C13initializeSDK6userId10completion13configurationySSSg_ys6ResultOyytAA0cB5ErrorOGcSgAA18TSDrsConfigurationVSgtKFZ",
             "moduleName": "AccountProtection",
             "static": true,
             "declAttributes": [
@@ -5336,14 +5393,14 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtection.swift",
       "kind": "StringLiteral",
-      "offset": 3312,
+      "offset": 3565,
       "length": 41,
       "value": "\"https:\/\/collect.riskid.security\/device\/\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtection.swift",
       "kind": "StringLiteral",
-      "offset": 4436,
+      "offset": 4689,
       "length": 34,
       "value": "\"https:\/\/api.transmitsecurity.io\/\""
     },
@@ -5563,6 +5620,13 @@
       "offset": 1101,
       "length": 32,
       "value": "\"UISystemKeyboardDockController\""
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/ScreenNavigationCollector\/TSScreenNavigationCollector.swift",
+      "kind": "StringLiteral",
+      "offset": 1198,
+      "length": 34,
+      "value": "\"_UICursorAccessoryViewController\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSUserIdCollector\/TSUserIdCollector.swift",
