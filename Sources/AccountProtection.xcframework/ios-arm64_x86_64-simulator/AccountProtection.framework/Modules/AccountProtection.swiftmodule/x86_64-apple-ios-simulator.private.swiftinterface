@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AccountProtection
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AccountProtection
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 @_exported import AccountProtection
 import SystemConfiguration.CaptiveNetwork
@@ -67,6 +68,7 @@ public struct TSTransactionData : Swift.Codable {
   public static func setUserId(_ userId: Swift.String)
   public static func clearUser()
   public static func getSessionToken(completion: @escaping AccountProtection.TSAccountProtection.SessionTokenCompletion)
+  public static func disableInteractionCollector()
   @objc deinit
 }
 public protocol SystemControlValueDefining {
@@ -99,6 +101,7 @@ public struct SystemControlValuesProvider : AccountProtection.SystemControlValue
 public enum BiometryType : Swift.String, Swift.Encodable {
   case faceID
   case touchID
+  case opticID
   case none
   case unknown
   public init?(rawValue: Swift.String)
