@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "AccountProtection",
+    "printedName": "AccountProtection",
     "children": [
       {
         "kind": "Import",
@@ -156,6 +156,206 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSInitSDKConfiguration",
+        "printedName": "TSInitSDKConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enableTrackingBehavioralData",
+            "printedName": "enableTrackingBehavioralData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17AccountProtection22TSInitSDKConfigurationV28enableTrackingBehavioralDataSbSgvp",
+            "mangledName": "$s17AccountProtection22TSInitSDKConfigurationV28enableTrackingBehavioralDataSbSgvp",
+            "moduleName": "AccountProtection",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17AccountProtection22TSInitSDKConfigurationV28enableTrackingBehavioralDataSbSgvg",
+                "mangledName": "$s17AccountProtection22TSInitSDKConfigurationV28enableTrackingBehavioralDataSbSgvg",
+                "moduleName": "AccountProtection",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(enableTrackingBehavioralData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSInitSDKConfiguration",
+                "printedName": "AccountProtection.TSInitSDKConfiguration",
+                "usr": "s:17AccountProtection22TSInitSDKConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17AccountProtection22TSInitSDKConfigurationV28enableTrackingBehavioralDataACSb_tcfc",
+            "mangledName": "$s17AccountProtection22TSInitSDKConfigurationV28enableTrackingBehavioralDataACSb_tcfc",
+            "moduleName": "AccountProtection",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSInitSDKConfiguration",
+                "printedName": "AccountProtection.TSInitSDKConfiguration",
+                "usr": "s:17AccountProtection22TSInitSDKConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17AccountProtection22TSInitSDKConfigurationV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17AccountProtection22TSInitSDKConfigurationV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AccountProtection",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection22TSInitSDKConfigurationV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s17AccountProtection22TSInitSDKConfigurationV6encode2toys7Encoder_p_tKF",
+            "moduleName": "AccountProtection",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17AccountProtection22TSInitSDKConfigurationV",
+        "mangledName": "$s17AccountProtection22TSInitSDKConfigurationV",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -214,6 +414,22 @@
         "moduleName": "AccountProtection",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -228,6 +444,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -316,6 +546,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -422,6 +666,22 @@
         "moduleName": "AccountProtection",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -557,6 +817,20 @@
               "AccessControl"
             ],
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Decodable",
@@ -715,6 +989,20 @@
               "AccessControl"
             ],
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Decodable",
@@ -1210,6 +1498,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -1232,7 +1534,7 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(baseUrl:clientId:userId:completion:)",
+            "printedName": "initialize(baseUrl:clientId:userId:configuration:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1262,6 +1564,21 @@
                     "name": "String",
                     "printedName": "Swift.String",
                     "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AccountProtection.TSInitSDKConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSInitSDKConfiguration",
+                    "printedName": "AccountProtection.TSInitSDKConfiguration",
+                    "usr": "s:17AccountProtection22TSInitSDKConfigurationV"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -1300,8 +1617,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:17AccountProtection09TSAccountB0C10initialize7baseUrl8clientId04userH010completionySS_S2SSgys6ResultOyytAA0cB5ErrorOGctFZ",
-            "mangledName": "$s17AccountProtection09TSAccountB0C10initialize7baseUrl8clientId04userH010completionySS_S2SSgys6ResultOyytAA0cB5ErrorOGctFZ",
+            "usr": "s:17AccountProtection09TSAccountB0C10initialize7baseUrl8clientId04userH013configuration10completionySS_S2SSgAA22TSInitSDKConfigurationVSgys6ResultOyytAA0cB5ErrorOGctFZ",
+            "mangledName": "$s17AccountProtection09TSAccountB0C10initialize7baseUrl8clientId04userH013configuration10completionySS_S2SSgAA22TSInitSDKConfigurationVSgys6ResultOyytAA0cB5ErrorOGctFZ",
             "moduleName": "AccountProtection",
             "static": true,
             "declAttributes": [
@@ -1314,7 +1631,7 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(baseUrl:clientId:userId:)",
+            "printedName": "initialize(baseUrl:clientId:userId:configuration:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1348,11 +1665,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AccountProtection.TSInitSDKConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSInitSDKConfiguration",
+                    "printedName": "AccountProtection.TSInitSDKConfiguration",
+                    "usr": "s:17AccountProtection22TSInitSDKConfigurationV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17AccountProtection09TSAccountB0C10initialize7baseUrl8clientId04userH0ySS_S2SSgtFZ",
-            "mangledName": "$s17AccountProtection09TSAccountB0C10initialize7baseUrl8clientId04userH0ySS_S2SSgtFZ",
+            "usr": "s:17AccountProtection09TSAccountB0C10initialize7baseUrl8clientId04userH013configurationySS_S2SSgAA22TSInitSDKConfigurationVSgtFZ",
+            "mangledName": "$s17AccountProtection09TSAccountB0C10initialize7baseUrl8clientId04userH013configurationySS_S2SSgAA22TSInitSDKConfigurationVSgtFZ",
             "moduleName": "AccountProtection",
             "static": true,
             "declAttributes": [
@@ -1651,6 +1983,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1800,6 +2146,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1924,6 +2286,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "SystemControlValueDefining",
@@ -2231,6 +2607,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2393,6 +2783,22 @@
         "moduleName": "AccountProtection",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2458,6 +2864,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "SystemControlValuesProviding",
@@ -2952,6 +3372,46 @@
           },
           {
             "kind": "Var",
+            "name": "opticID",
+            "printedName": "opticID",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountProtection.BiometryType.Type) -> AccountProtection.BiometryType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BiometryType",
+                    "printedName": "AccountProtection.BiometryType",
+                    "usr": "s:17AccountProtection12BiometryTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountProtection.BiometryType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BiometryType",
+                        "printedName": "AccountProtection.BiometryType",
+                        "usr": "s:17AccountProtection12BiometryTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17AccountProtection12BiometryTypeO7opticIDyA2CmF",
+            "mangledName": "$s17AccountProtection12BiometryTypeO7opticIDyA2CmF",
+            "moduleName": "AccountProtection",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "none",
             "printedName": "none",
             "children": [
@@ -3112,6 +3572,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3511,6 +3985,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -4111,6 +4599,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4249,6 +4751,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -4490,6 +5006,22 @@
         "moduleName": "AccountProtection",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -4606,6 +5138,20 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "RawPointerConvertible",
@@ -5152,12 +5698,6 @@
                         "name": "TransferRepresentation",
                         "printedName": "CoreTransferable.TransferRepresentation",
                         "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
                       }
                     ]
                   }
@@ -5173,104 +5713,6 @@
     "json_format_version": 8
   },
   "ConstValues": [
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 194,
-      "length": 11,
-      "value": "\"page_load\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 223,
-      "length": 7,
-      "value": "\"click\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 248,
-      "length": 7,
-      "value": "\"swipe\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 274,
-      "length": 8,
-      "value": "\"scroll\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 309,
-      "length": 16,
-      "value": "\"locationchange\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 343,
-      "length": 7,
-      "value": "\"paste\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 373,
-      "length": 11,
-      "value": "\"mousemove\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 403,
-      "length": 8,
-      "value": "\"submit\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 429,
-      "length": 7,
-      "value": "\"keyup\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 456,
-      "length": 9,
-      "value": "\"keydown\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 483,
-      "length": 7,
-      "value": "\"input\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 511,
-      "length": 10,
-      "value": "\"focusout\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 539,
-      "length": 7,
-      "value": "\"touch\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
-      "kind": "StringLiteral",
-      "offset": 569,
-      "length": 12,
-      "value": "\"screenshot\""
-    },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector+Types.swift",
       "kind": "StringLiteral",
@@ -5393,14 +5835,14 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtection.swift",
       "kind": "StringLiteral",
-      "offset": 3565,
+      "offset": 3962,
       "length": 41,
       "value": "\"https:\/\/collect.riskid.security\/device\/\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtection.swift",
       "kind": "StringLiteral",
-      "offset": 4689,
+      "offset": 5291,
       "length": 34,
       "value": "\"https:\/\/api.transmitsecurity.io\/\""
     },
@@ -5441,120 +5883,50 @@
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 489,
-      "length": 8,
-      "value": "\"device\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 520,
-      "length": 12,
-      "value": "\"navigation\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 551,
-      "length": 8,
-      "value": "\"action\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 586,
-      "length": 16,
-      "value": "\"identification\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 626,
-      "length": 13,
-      "value": "\"interaction\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5223,
+      "offset": 5337,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5364,
+      "offset": 5478,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 15137,
+      "offset": 15769,
       "length": 13,
       "value": "\"action_type\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 15180,
+      "offset": 15812,
       "length": 16,
       "value": "\"correlation_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 15226,
+      "offset": 15858,
       "length": 17,
       "value": "\"claimed_user_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 15275,
+      "offset": 15907,
       "length": 19,
       "value": "\"reference_user_id\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 15326,
-      "length": 17,
-      "value": "\"transactionData\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 15137,
-      "length": 13,
-      "value": "\"action_type\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 15180,
-      "length": 16,
-      "value": "\"correlation_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 15226,
-      "length": 17,
-      "value": "\"claimed_user_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 15275,
-      "length": 19,
-      "value": "\"reference_user_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 15326,
+      "offset": 15958,
       "length": 17,
       "value": "\"transactionData\""
     },
@@ -5678,20 +6050,6 @@
       "value": "\"user_id\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSUserIdCollector\/TSUserIdCollector+EventModel.swift",
-      "kind": "StringLiteral",
-      "offset": 351,
-      "length": 18,
-      "value": "\"previous_user_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSUserIdCollector\/TSUserIdCollector+EventModel.swift",
-      "kind": "StringLiteral",
-      "offset": 396,
-      "length": 9,
-      "value": "\"user_id\""
-    },
-    {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
       "kind": "StringLiteral",
       "offset": 1467,
@@ -5739,13 +6097,6 @@
       "offset": 1869,
       "length": 3,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
-      "kind": "StringLiteral",
-      "offset": 1552,
-      "length": 16,
-      "value": "\"AccountProtection.TSGestureMonitor\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
@@ -5806,51 +6157,16 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector.swift",
       "kind": "IntegerLiteral",
-      "offset": 474,
+      "offset": 477,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector.swift",
       "kind": "IntegerLiteral",
-      "offset": 494,
+      "offset": 497,
       "length": 2,
       "value": "10"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 474,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 494,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 474,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 494,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/ScreenNavigationCollector\/TSScreenNavigationCollector+EventModel.swift",
-      "kind": "StringLiteral",
-      "offset": 413,
-      "length": 18,
-      "value": "\"interaction_type\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/ScreenNavigationCollector\/TSScreenNavigationCollector+EventModel.swift",
@@ -5867,39 +6183,32 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
-      "kind": "StringLiteral",
-      "offset": 291,
-      "length": 5,
-      "value": "\"pan\""
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7883,
+      "length": 2,
+      "value": "-2"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
       "kind": "StringLiteral",
-      "offset": 316,
-      "length": 5,
-      "value": "\"tap\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
-      "kind": "StringLiteral",
-      "offset": 342,
+      "offset": 7930,
       "length": 6,
-      "value": "\"text\""
+      "value": "\"fork\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
-      "kind": "StringLiteral",
-      "offset": 375,
-      "length": 12,
-      "value": "\"screenshot\""
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8113,
+      "length": 1,
+      "value": "0"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
-      "kind": "StringLiteral",
-      "offset": 417,
-      "length": 15,
-      "value": "\"accessibility\""
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Security\/Checkers\/JailbreakChecker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8145,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
@@ -5939,7 +6248,7 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitoringEventsCollector.swift",
       "kind": "Array",
-      "offset": 2067,
+      "offset": 2070,
       "length": 2,
       "value": "[]"
     },
@@ -6119,48 +6428,6 @@
       "value": "3"
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/TSDeviceMetadata.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1242,
-      "length": 9,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/TSDeviceMetadata.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1265,
-      "length": 8,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/TSDeviceMetadata.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1287,
-      "length": 4,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/TSDeviceMetadata.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1242,
-      "length": 9,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/TSDeviceMetadata.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1265,
-      "length": 8,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/TSDeviceMetadata.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1287,
-      "length": 4,
-      "value": "3"
-    },
-    {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/Device Metadata\/Hardware\/Hardware.swift",
       "kind": "IntegerLiteral",
       "offset": 10889,
@@ -6175,48 +6442,6 @@
       "value": "\"packageName\""
     },
     {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector+EventModel.swift",
-      "kind": "StringLiteral",
-      "offset": 1183,
-      "length": 13,
-      "value": "\"packageName\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 3621,
-      "length": 18,
-      "value": "\"interaction_type\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 3668,
-      "length": 11,
-      "value": "\"target_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 3710,
-      "length": 13,
-      "value": "\"target_type\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 3805,
-      "length": 9,
-      "value": "\"offsetX\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 3842,
-      "length": 9,
-      "value": "\"offsetY\""
-    },
-    {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
       "kind": "StringLiteral",
       "offset": 3621,
@@ -6282,55 +6507,6 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 4504,
-      "length": 19,
-      "value": "\"absolute_location\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 4560,
-      "length": 19,
-      "value": "\"relative_location\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 4608,
-      "length": 11,
-      "value": "\"target_id\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 4650,
-      "length": 13,
-      "value": "\"target_type\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6338,
-      "length": 18,
-      "value": "\"interaction_type\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6385,
-      "length": 10,
-      "value": "\"scrolled\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6421,
-      "length": 7,
-      "value": "\"trail\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
       "offset": 6338,
       "length": 18,
       "value": "\"interaction_type\""
@@ -6359,37 +6535,9 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
       "kind": "StringLiteral",
-      "offset": 6893,
-      "length": 18,
-      "value": "\"interaction_type\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
       "offset": 7225,
       "length": 18,
       "value": "\"interaction_type\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7225,
-      "length": 18,
-      "value": "\"interaction_type\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7551,
-      "length": 18,
-      "value": "\"interaction_type\""
-    },
-    {
-      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7606,
-      "length": 19,
-      "value": "\"accessibilty_name\""
     },
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSInteractionTypes.swift",

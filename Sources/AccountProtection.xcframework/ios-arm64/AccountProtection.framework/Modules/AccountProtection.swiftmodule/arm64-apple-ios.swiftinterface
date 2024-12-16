@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AccountProtection
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 @_exported import AccountProtection
 import SystemConfiguration.CaptiveNetwork
@@ -23,6 +24,12 @@ import _SwiftConcurrencyShims
 import zlib
 public struct TSDrsConfiguration {
   public init(configurationFileName: Swift.String)
+}
+public struct TSInitSDKConfiguration : Swift.Codable {
+  public let enableTrackingBehavioralData: Swift.Bool?
+  public init(enableTrackingBehavioralData: Swift.Bool)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct TSTriggerActionResponse {
   public let token: Swift.String
@@ -60,8 +67,8 @@ public struct TSTransactionData : Swift.Codable {
   public typealias CompletionResult = Swift.Result<Swift.Void, AccountProtection.TSAccountProtectionError>
   public typealias Completion = (AccountProtection.TSAccountProtection.CompletionResult) -> Swift.Void
   public typealias SessionTokenCompletion = (Swift.String) -> Swift.Void
-  public static func initialize(baseUrl: Swift.String = "https://collect.riskid.security/device/", clientId: Swift.String, userId: Swift.String? = nil, completion: @escaping AccountProtection.TSAccountProtection.Completion)
-  public static func initialize(baseUrl: Swift.String = "https://api.transmitsecurity.io/", clientId: Swift.String, userId: Swift.String? = nil)
+  public static func initialize(baseUrl: Swift.String = "https://collect.riskid.security/device/", clientId: Swift.String, userId: Swift.String? = nil, configuration: AccountProtection.TSInitSDKConfiguration? = nil, completion: @escaping AccountProtection.TSAccountProtection.Completion)
+  public static func initialize(baseUrl: Swift.String = "https://api.transmitsecurity.io/", clientId: Swift.String, userId: Swift.String? = nil, configuration: AccountProtection.TSInitSDKConfiguration? = nil)
   public static func initializeSDK(userId: Swift.String? = nil, completion: AccountProtection.TSAccountProtection.Completion? = nil, configuration: AccountProtection.TSDrsConfiguration? = nil) throws
   public static func triggerAction(_ action: Swift.String, options: AccountProtection.TSActionEventOptions? = nil, completion: @escaping (Swift.Result<AccountProtection.TransmitSecurityTriggerActionResponse, AccountProtection.TransmitSecurityAccountProtectionError>) -> Swift.Void)
   public static func setUserId(_ userId: Swift.String)
@@ -99,6 +106,7 @@ public struct SystemControlValuesProvider : AccountProtection.SystemControlValue
 public enum BiometryType : Swift.String, Swift.Encodable {
   case faceID
   case touchID
+  case opticID
   case none
   case unknown
   public init?(rawValue: Swift.String)
