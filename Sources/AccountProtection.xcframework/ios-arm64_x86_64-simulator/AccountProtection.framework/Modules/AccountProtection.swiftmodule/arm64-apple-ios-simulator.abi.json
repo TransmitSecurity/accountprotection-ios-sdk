@@ -5821,7 +5821,7 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/TSConfigurationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3381,
+      "offset": 3550,
       "length": 1,
       "value": "0"
     },
@@ -6402,7 +6402,14 @@
     {
       "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/observers\/TSConfigurationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 3182,
+      "offset": 3245,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/igorbabitski\/Documents\/Projects\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/observers\/TSConfigurationObserver.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3294,
       "length": 5,
       "value": "false"
     },
