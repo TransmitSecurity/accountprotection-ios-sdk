@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AccountProtection
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
@@ -102,6 +102,22 @@ public protocol SystemControlValuesProviding {
 public struct SystemControlValuesProvider : AccountProtection.SystemControlValuesProviding {
   public init()
   public func getSystemValue<T>(_ definition: T) throws -> T.ValueType where T : AccountProtection.SystemControlValueDefining
+}
+@_hasMissingDesignatedInitializers public class FridaDetector {
+  public enum DetectionResults {
+    case unknown
+    case notDetected
+    case detected(AccountProtection.FridaDetector.DetectedData)
+  }
+  public struct DetectedData : Swift.Codable {
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func isRunningPatchedBinary() -> AccountProtection.FridaDetector.DetectionResults
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class JWTDecoder {
+  @objc deinit
 }
 public enum BiometryType : Swift.String, Swift.Encodable {
   case faceID
