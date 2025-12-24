@@ -14,7 +14,8 @@ let package = Package(
             targets: ["AccountProtection", "AccountProtection-Dependencies"])
     ],
     dependencies: [
-        .package(url: "https://github.com/TransmitSecurity/core-ios-sdk.git", from: "1.0.36")
+        .package(url: "https://github.com/TransmitSecurity/core-ios-sdk.git", from: "1.0.36"),
+        .package(url: "https://github.com/TransmitSecurity/drs-kmp-ios-sdk.git", from: "0.0.1")
     ],
     targets: [
         .binaryTarget(
@@ -24,7 +25,9 @@ let package = Package(
         .target(name: "AccountProtection-Dependencies",
                 dependencies: [
                     .product(name: "TSCoreSDK",
-                             package: "core-ios-sdk")
+                             package: "core-ios-sdk"),
+                    .product(name: "TSAccountProtectionKMP",
+                             package: "drs-kmp-ios-sdk")
                 ]),
     ]
 )
