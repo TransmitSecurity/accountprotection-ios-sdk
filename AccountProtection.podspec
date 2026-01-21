@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
     #
   
     spec.name         = "AccountProtection"
-    spec.version      = "2.1.7"
+    spec.version      = "0.0.8006"
     spec.summary      = "Account protection is a cloud service embedded into web and mobile apps to help enterprises confidently welcome trusted customers and keep the bad people out."
     spec.homepage     = "https://www.transmitsecurity.co.il"
   
@@ -134,6 +134,6 @@ Pod::Spec.new do |spec|
     # spec.requires_arc = true
   
     # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-    spec.dependency "TSCoreSDK", "~> 1.0.25"
+    spec.dependency "TSCoreSDK", "~> 0.2.8000"
   
   end
