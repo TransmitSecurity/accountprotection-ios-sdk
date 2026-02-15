@@ -1,33 +1,66 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AccountProtection
-// swift-module-flags-ignorable: -enable-bare-slash-regex
-import AVFoundation
+// swift-compiler-version: Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -module-name AccountProtection
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import AccountProtection
-import SystemConfiguration.CaptiveNetwork
 import Combine
-import CoreMotion
-import CoreTelephony
-import Darwin
-import ExternalAccessory
+import CoreLocation
 import Foundation
-import LocalAuthentication
-import MachO
 import Swift
 import SwiftUI
-import SystemConfiguration
 import TSCoreSDK
 import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import zlib
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class TSAccountProtection : ObjectiveC.NSObject, TSCoreSDK.TSLogConfigurable {
+  public typealias CompletionResult = Swift.Result<Swift.Void, AccountProtection.TSAccountProtectionError>
+  public typealias Completion = (AccountProtection.TSAccountProtection.CompletionResult) -> Swift.Void
+  public typealias SessionTokenCompletion = (Swift.String) -> Swift.Void
+  public typealias SessionTokenResultCompletion = (Swift.Result<Swift.String, AccountProtection.TransmitSecurityAccountProtectionError>) -> Swift.Void
+  public static func initialize(baseUrl: Swift.String = "https://api.transmitsecurity.io/", clientId: Swift.String, userId: Swift.String? = nil, configuration: AccountProtection.TSInitSDKConfiguration? = nil, completion: @escaping AccountProtection.TSAccountProtection.Completion)
+  public static func initialize(baseUrl: Swift.String = "https://api.transmitsecurity.io/", clientId: Swift.String, userId: Swift.String? = nil, configuration: AccountProtection.TSInitSDKConfiguration? = nil)
+  public static func initializeSDK(userId: Swift.String? = nil, completion: AccountProtection.TSAccountProtection.Completion? = nil, configuration: AccountProtection.TSDrsConfiguration? = nil) throws
+  public static func triggerAction(_ action: Swift.String, customAttributes: [Swift.String : Any]? = nil, options: AccountProtection.TSActionEventOptions? = nil, locationConfig: AccountProtection.TSLocationConfig? = nil, completion: @escaping (Swift.Result<AccountProtection.TransmitSecurityTriggerActionResponse, AccountProtection.TransmitSecurityAccountProtectionError>) -> Swift.Void)
+  public static func setUserId(_ userId: Swift.String)
+  public static func clearUser()
+  @available(*, deprecated, message: "Use getSessionToken(completion: SessionTokenResultCompletion) instead for proper error handling")
+  public static func getSessionToken(completion: @escaping AccountProtection.TSAccountProtection.SessionTokenCompletion)
+  public static func getSessionToken(completion: @escaping AccountProtection.TSAccountProtection.SessionTokenResultCompletion)
+  @objc deinit
+}
+public enum TSProtectionError : Swift.Error {
+  case Disabled
+  case InternalError
+  case ConnectionError
+  case NotSupportedActionError
+  public static func == (a: AccountProtection.TSProtectionError, b: AccountProtection.TSProtectionError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class FridaDetector {
+  public enum DetectionResults {
+    case unknown
+    case notDetected
+    case detected(AccountProtection.FridaDetector.DetectedData)
+  }
+  public struct DetectedData : Swift.Codable {
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func isRunningPatchedBinary() -> AccountProtection.FridaDetector.DetectionResults
+  @objc deinit
+}
 public struct TSDrsConfiguration {
   public init(configurationFileName: Swift.String)
 }
-public struct TSInitSDKConfiguration : Swift.Codable {
+public struct TSInitSDKConfiguration : Swift.Codable, @unchecked Swift.Sendable {
   public let enableTrackingBehavioralData: Swift.Bool?
-  public init(enableTrackingBehavioralData: Swift.Bool)
+  public let enableLocationEvents: Swift.Bool?
+  public init(enableTrackingBehavioralData: Swift.Bool = true, enableLocationEvents: Swift.Bool = false)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -39,7 +72,7 @@ public struct TSTriggerActionError : Swift.Error {
 public enum TSAccountProtectionError : Swift.Error {
   case `internal`((any Swift.Error)?)
 }
-public struct TSActionEventOptions {
+public struct TSActionEventOptions : @unchecked Swift.Sendable {
   public init(correlationId: Swift.String?, claimUserId: Swift.String?, referenceUserId: Swift.String?, transactionData: AccountProtection.TSTransactionData? = nil)
 }
 public struct TSTransactionData : Swift.Codable {
@@ -63,62 +96,31 @@ public struct TSTransactionData : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class TSAccountProtection : ObjectiveC.NSObject, TSCoreSDK.TSLogConfigurable {
-  public typealias CompletionResult = Swift.Result<Swift.Void, AccountProtection.TSAccountProtectionError>
-  public typealias Completion = (AccountProtection.TSAccountProtection.CompletionResult) -> Swift.Void
-  public typealias SessionTokenCompletion = (Swift.String) -> Swift.Void
-  public static func initialize(baseUrl: Swift.String = "https://collect.riskid.security/device/", clientId: Swift.String, userId: Swift.String? = nil, configuration: AccountProtection.TSInitSDKConfiguration? = nil, completion: @escaping AccountProtection.TSAccountProtection.Completion)
-  public static func initialize(baseUrl: Swift.String = "https://api.transmitsecurity.io/", clientId: Swift.String, userId: Swift.String? = nil, configuration: AccountProtection.TSInitSDKConfiguration? = nil)
-  public static func initializeSDK(userId: Swift.String? = nil, completion: AccountProtection.TSAccountProtection.Completion? = nil, configuration: AccountProtection.TSDrsConfiguration? = nil) throws
-  public static func triggerAction(_ action: Swift.String, options: AccountProtection.TSActionEventOptions? = nil, completion: @escaping (Swift.Result<AccountProtection.TransmitSecurityTriggerActionResponse, AccountProtection.TransmitSecurityAccountProtectionError>) -> Swift.Void)
-  public static func setUserId(_ userId: Swift.String)
-  public static func clearUser()
-  public static func getSessionToken(completion: @escaping AccountProtection.TSAccountProtection.SessionTokenCompletion)
+public enum TSLocationInterval : Swift.Int {
+  case alwaysUseCurrent
+  case alwaysUseLast
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct TSLocationConfig : @unchecked Swift.Sendable {
+  public let mode: AccountProtection.TSLocationCollectionMode
+  public init(mode: AccountProtection.TSLocationCollectionMode)
+}
+public enum TSLocationCollectionMode {
+  case disabled
+  case `default`
+  case forceCurrent
+  case forceLastKnown
+  case lastKnown(validFor: Swift.Int)
+}
+@_hasMissingDesignatedInitializers public class JWTDecoder {
   @objc deinit
 }
-public protocol SystemControlValueDefining {
-  associatedtype ValueType : AccountProtection.RawPointerConvertible
-  var flags: [Swift.Int32] { get }
-}
-public struct SystemControlValueDefinition<T> : AccountProtection.SystemControlValueDefining where T : AccountProtection.RawPointerConvertible {
-  public typealias ValueType = T
-  public let flags: [Swift.Int32]
-  public init(flags: [Swift.Int32])
-}
-public enum TSProtectionError : Swift.Error {
-  case Disabled
-  case InternalError
-  case ConnectionError
-  case NotSupportedActionError
-  public static func == (a: AccountProtection.TSProtectionError, b: AccountProtection.TSProtectionError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public protocol SystemControlValuesProviding {
-  func getSystemValue<T>(_ definition: T) throws -> T.ValueType where T : AccountProtection.SystemControlValueDefining
-}
-public struct SystemControlValuesProvider : AccountProtection.SystemControlValuesProviding {
-  public init()
-  public func getSystemValue<T>(_ definition: T) throws -> T.ValueType where T : AccountProtection.SystemControlValueDefining
-}
-public enum BiometryType : Swift.String, Swift.Encodable {
-  case faceID
-  case touchID
-  case opticID
-  case none
-  case unknown
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum SystemControlError : Swift.Error, Swift.Equatable {
-  case osError(Swift.Int32)
-  case valueHasZeroSize
-  public static func == (a: AccountProtection.SystemControlError, b: AccountProtection.SystemControlError) -> Swift.Bool
+@_hasMissingDesignatedInitializers public class TSDeviceDataTypes {
+  @objc deinit
 }
 public enum TransmitSecurityAccountProtectionError : Swift.Error {
   case disabled
@@ -137,22 +139,10 @@ public struct TransmitSecurityTriggerActionResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public protocol RawPointerConvertible {
-  static func loadValue(_ from: Swift.UnsafeRawPointer, of size: Swift.Int) -> Self
-  static func withRawMemory(of size: Swift.Int, body: (inout Swift.UnsafeMutableRawPointer) throws -> Self) rethrows -> Self
-}
-extension AccountProtection.RawPointerConvertible {
-  public static func withRawMemory(of size: Swift.Int, body: (inout Swift.UnsafeMutableRawPointer) throws -> Self) rethrows -> Self
-  public static func loadValue(_ from: Swift.UnsafeRawPointer, of size: Swift.Int) -> Self
-}
-extension Swift.String : AccountProtection.RawPointerConvertible {
-  public static func withRawMemory(of size: Swift.Int, body: (inout Swift.UnsafeMutableRawPointer) throws -> Swift.String) rethrows -> Swift.String
-  public static func loadValue(_ from: Swift.UnsafeRawPointer, of size: Swift.Int) -> Swift.String
-}
 extension AccountProtection.TSProtectionError : Swift.Equatable {}
 extension AccountProtection.TSProtectionError : Swift.Hashable {}
-extension AccountProtection.BiometryType : Swift.Equatable {}
-extension AccountProtection.BiometryType : Swift.Hashable {}
-extension AccountProtection.BiometryType : Swift.RawRepresentable {}
+extension AccountProtection.TSLocationInterval : Swift.Equatable {}
+extension AccountProtection.TSLocationInterval : Swift.Hashable {}
+extension AccountProtection.TSLocationInterval : Swift.RawRepresentable {}
 extension AccountProtection.TransmitSecurityAccountProtectionError : Swift.Equatable {}
 extension AccountProtection.TransmitSecurityAccountProtectionError : Swift.Hashable {}
