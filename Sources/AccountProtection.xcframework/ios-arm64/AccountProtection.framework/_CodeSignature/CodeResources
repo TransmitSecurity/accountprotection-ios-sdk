@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>CHANGELOG.md</key>
+		<data>
+		xyx8+SEJpMzY87t4xT0nP/ZQpsM=
+		</data>
 		<key>Headers/AccountProtection-Swift.h</key>
 		<data>
-		KNqLvH0XgwxvbLmmC2n6PSrhoP0=
+		hRta/a22NQ66CyArtSCoZV6TlQc=
 		</data>
 		<key>Headers/AccountProtection.h</key>
 		<data>
@@ -14,27 +18,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iJ3GFjV1sS1S5zT7q3kRPvN2Mz0=
+		hIsvI65GIq6x/nLh5OSpbCgAuuM=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		iefx3mw4wXJc3AcZboE/LTDhgfk=
+		Cs16XpVwlbOza36LGvK4rhF0LNs=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		w1KZ1kfuix6woPHDo/lsYnAQBU8=
+		NU1QQ32g0G5s0FWr4cqrqztEVcc=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		SA9EzrZezh5/L/eUqf9V8GfVyt4=
+		XMJCEcSJ2KWv9I2hGvipbfCMMDE=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		w1KZ1kfuix6woPHDo/lsYnAQBU8=
+		NU1QQ32g0G5s0FWr4cqrqztEVcc=
 		</data>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		dNWFuPvZARkoW02CQ1GbuZRSHr0=
+		RL2HzAtFtyVCvN1tipjXxPrFQJ4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,11 +51,18 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>CHANGELOG.md</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2QyuI7PdAB1+coWekHiu/qWIEhOW6Szez/FXC486jNQ=
+			</data>
+		</dict>
 		<key>Headers/AccountProtection-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KGyyQo0u/5HLH1QNpfroGhYeJS5Xqo+6bkpgqVJ0toU=
+			BMRn42bnEjRnS+lm4PtCi52x1GPvnAc21sv6tJAFcXI=
 			</data>
 		</dict>
 		<key>Headers/AccountProtection.h</key>
@@ -65,35 +76,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ICNvIm0Uuo3zqFdNd9f4/XDPYcZUQ+fRHAU887eCsdI=
+			HGBvbE+NLRLJ4i5Ixy5VazJGx/PUCx9VMTYn7stZWcU=
 			</data>
 		</dict>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1UBrpyEkgxUMCn7ZREVVYe4mBzdneJbBV5BXUAsgI9Y=
+			SqY5HZ1vHvKFEmUFQXQSpZQHmnNr4pLP98FKdZdLz7Y=
 			</data>
 		</dict>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NsoC1R4xAVdg3ga5e0x3xxeLpME6nvNZQc20BZslQ/8=
+			AJEE2MIOdmS6ACykGuksWacVnMc5FH+9pggwgPru05A=
 			</data>
 		</dict>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1UBrpyEkgxUMCn7ZREVVYe4mBzdneJbBV5BXUAsgI9Y=
+			SqY5HZ1vHvKFEmUFQXQSpZQHmnNr4pLP98FKdZdLz7Y=
 			</data>
 		</dict>
 		<key>Modules/AccountProtection.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FPRPkHExo/iX5q5ukpt0ZqC07sG2hcbotHXhl4YR9xQ=
+			OTzIZ4vTf9Wa992k3hcMomKt1Re7lsezQjfpXEGshVY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
