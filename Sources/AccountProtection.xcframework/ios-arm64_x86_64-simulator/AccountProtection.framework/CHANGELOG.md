@@ -5,6 +5,9 @@ toc:
 ---
 # iOS Fraud Prevention SDK Changelog
 
+## Fraud Prevention - 3.0.3 - Jun. 2026
+* feat: Added Flutter support. Native behavioral collection is disabled in Flutter apps; interaction events (touch, click, input, navigation) are reported manually via `logInteractionEvent(_:)`. Added `getCollectorConfiguration()` and collector configuration listeners for cross-platform integration.
+
 ## Fraud Prevention - 3.0.2 - Jun. 2026
 * fix: Fixed a rare crash that could occur while some app resources were being released from memory.
 

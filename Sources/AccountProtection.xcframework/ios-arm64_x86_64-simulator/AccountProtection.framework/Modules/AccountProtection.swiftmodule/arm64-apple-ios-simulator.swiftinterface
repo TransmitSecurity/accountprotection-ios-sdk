@@ -6,6 +6,7 @@ import AVFoundation
 @_exported import AccountProtection
 import CallKit
 import Combine
+import CoreGraphics
 import CoreLocation
 import Foundation
 import Swift
@@ -27,6 +28,11 @@ import zlib
   public static func triggerAction(_ action: Swift.String, customAttributes: [Swift.String : Any]? = nil, options: AccountProtection.TSActionEventOptions? = nil, locationConfig: AccountProtection.TSLocationConfig? = nil, completion: @escaping (Swift.Result<AccountProtection.TransmitSecurityTriggerActionResponse, AccountProtection.TransmitSecurityAccountProtectionError>) -> Swift.Void)
   public static func setAuthenticatedUser(_ userId: Swift.String, options: [Swift.String : Any]? = nil)
   public static func logPageLoad(_ pageName: Swift.String) throws
+  public static func logInteractionEvent(_ payload: [Swift.String : Any]) throws
+  public static func getCollectorConfiguration() -> [Swift.String : Any]
+  @discardableResult
+  public static func addCollectorConfigurationListener(_ listener: @escaping ([Swift.String : Any]) -> Swift.Void) -> Foundation.UUID
+  public static func removeCollectorConfigurationListener(_ token: Foundation.UUID)
   public static func clearUser()
   @available(*, deprecated, message: "Use getSessionToken(completion: SessionTokenResultCompletion) instead for proper error handling")
   public static func getSessionToken(completion: @escaping AccountProtection.TSAccountProtection.SessionTokenCompletion)
