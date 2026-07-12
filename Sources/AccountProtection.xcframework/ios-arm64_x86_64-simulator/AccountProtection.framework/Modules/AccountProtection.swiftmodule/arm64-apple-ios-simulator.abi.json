@@ -608,6 +608,171 @@
           },
           {
             "kind": "Function",
+            "name": "logInteractionEvent",
+            "printedName": "logInteractionEvent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB0C19logInteractionEventyySDySSypGKFZ",
+            "mangledName": "$s17AccountProtection09TSAccountB0C19logInteractionEventyySDySSypGKFZ",
+            "moduleName": "AccountProtection",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCollectorConfiguration",
+            "printedName": "getCollectorConfiguration()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB0C25getCollectorConfigurationSDySSypGyFZ",
+            "mangledName": "$s17AccountProtection09TSAccountB0C25getCollectorConfigurationSDySSypGyFZ",
+            "moduleName": "AccountProtection",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addCollectorConfigurationListener",
+            "printedName": "addCollectorConfigurationListener(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Any]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB0C33addCollectorConfigurationListenery10Foundation4UUIDVySDySSypGcFZ",
+            "mangledName": "$s17AccountProtection09TSAccountB0C33addCollectorConfigurationListenery10Foundation4UUIDVySDySSypGcFZ",
+            "moduleName": "AccountProtection",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeCollectorConfigurationListener",
+            "printedName": "removeCollectorConfigurationListener(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB0C36removeCollectorConfigurationListeneryy10Foundation4UUIDVFZ",
+            "mangledName": "$s17AccountProtection09TSAccountB0C36removeCollectorConfigurationListeneryy10Foundation4UUIDVFZ",
+            "moduleName": "AccountProtection",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "clearUser",
             "printedName": "clearUser()",
             "children": [
@@ -1273,6 +1438,40 @@
       },
       {
         "kind": "Import",
+        "name": "TSCoreSDK",
+        "printedName": "TSCoreSDK",
+        "declKind": "Import",
+        "moduleName": "AccountProtection"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -1633,6 +1832,16 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "AccountProtection",
         "declAttributes": [
@@ -4890,6 +5099,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5088,6 +5307,16 @@
         "printedName": "TSCoreSDK",
         "declKind": "Import",
         "moduleName": "AccountProtection"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -6399,6 +6628,20 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSCollectorConfigurationBridge.swift",
+      "kind": "Array",
+      "offset": 2489,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/Utils\/RawInteractionEventConverter.swift",
+      "kind": "StringLiteral",
+      "offset": 254,
+      "length": 18,
+      "value": "\"interaction_type\""
+    },
+    {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
       "kind": "Array",
       "offset": 397,
@@ -6688,35 +6931,35 @@
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1824,
+      "offset": 2003,
       "length": 10,
       "value": "\"tenantId\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1890,
+      "offset": 2069,
       "length": 9,
       "value": "\"package\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1953,
+      "offset": 2132,
       "length": 7,
       "value": "\"build\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2013,
+      "offset": 2192,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2048,
+      "offset": 2227,
       "length": 6,
       "value": "\"conf\""
     },
@@ -6737,14 +6980,14 @@
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 9388,
+      "offset": 8245,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "Array",
-      "offset": 12408,
+      "offset": 11253,
       "length": 42,
       "value": "[\"button\", \"UIAlertControllerActionView\"]"
     },
@@ -6831,6 +7074,20 @@
       "offset": 906,
       "length": 43,
       "value": "\"com.transmitsecurity.calldetection.events\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/CrossPlatformDetection\/FlutterDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 233,
+      "length": 23,
+      "value": "\"FlutterViewController\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/CrossPlatformDetection\/FlutterDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 301,
+      "length": 15,
+      "value": "\"FlutterEngine\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector.swift",
@@ -6922,6 +7179,13 @@
       "offset": 395,
       "length": 1,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/CrossPlatformDetection\/CordovaDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 233,
+      "length": 19,
+      "value": "\"CDVViewController\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/observers\/TSConfigurationObserver.swift",
