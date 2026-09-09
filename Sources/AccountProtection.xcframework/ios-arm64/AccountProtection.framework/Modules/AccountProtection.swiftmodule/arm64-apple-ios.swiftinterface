@@ -6,6 +6,7 @@ import AVFoundation
 @_exported import AccountProtection
 import CallKit
 import Combine
+import CoreGraphics
 import CoreLocation
 import Foundation
 import Swift
@@ -25,8 +26,14 @@ import zlib
   public static func initialize(baseUrl: Swift.String, clientId: Swift.String, userId: Swift.String? = nil, configuration: AccountProtection.TSInitSDKConfiguration? = nil)
   public static func initializeSDK(userId: Swift.String? = nil, completion: AccountProtection.TSAccountProtection.Completion? = nil, configuration: AccountProtection.TSDrsConfiguration? = nil) throws
   public static func triggerAction(_ action: Swift.String, customAttributes: [Swift.String : Any]? = nil, options: AccountProtection.TSActionEventOptions? = nil, locationConfig: AccountProtection.TSLocationConfig? = nil, completion: @escaping (Swift.Result<AccountProtection.TransmitSecurityTriggerActionResponse, AccountProtection.TransmitSecurityAccountProtectionError>) -> Swift.Void)
+  public static func reportActionResult(actionToken: Swift.String, result: AccountProtection.TSActionResult, options: AccountProtection.TSActionResultOptions? = nil, completion: @escaping (Swift.Result<Swift.Void, AccountProtection.TransmitSecurityAccountProtectionError>) -> Swift.Void)
   public static func setAuthenticatedUser(_ userId: Swift.String, options: [Swift.String : Any]? = nil)
   public static func logPageLoad(_ pageName: Swift.String) throws
+  public static func logInteractionEvent(_ payload: [Swift.String : Any]) throws
+  public static func getCollectorConfiguration() -> [Swift.String : Any]
+  @discardableResult
+  public static func addCollectorConfigurationListener(_ listener: @escaping ([Swift.String : Any]) -> Swift.Void) -> Foundation.UUID
+  public static func removeCollectorConfigurationListener(_ token: Foundation.UUID)
   public static func clearUser()
   @available(*, deprecated, message: "Use getSessionToken(completion: SessionTokenResultCompletion) instead for proper error handling")
   public static func getSessionToken(completion: @escaping AccountProtection.TSAccountProtection.SessionTokenCompletion)
@@ -92,6 +99,35 @@ public enum TSClaimedUserIdType : Swift.String, Swift.Codable, Swift.Sendable {
   public var rawValue: Swift.String {
     get
   }
+}
+public enum TSActionResult : Swift.String, Swift.Codable, Swift.Sendable {
+  case success
+  case failure
+  case incomplete
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TSChallengeType : Swift.String, Swift.Codable, Swift.Sendable {
+  case smsOtp
+  case emailOtp
+  case totp
+  case pushOtp
+  case voiceOtp
+  case idv
+  case captcha
+  case password
+  case passkey
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct TSActionResultOptions : @unchecked Swift.Sendable {
+  public init(challengeType: AccountProtection.TSChallengeType? = nil, userId: Swift.String? = nil, privateUserIdentifier: Swift.String? = nil)
 }
 public struct TSActionEventOptions : @unchecked Swift.Sendable {
   @available(*, deprecated, message: "Use init(correlationId:claimedUserId:referenceUserId:transactionData:claimedUserIdType:) instead")
@@ -173,6 +209,12 @@ extension AccountProtection.TSProtectionError : Swift.Hashable {}
 extension AccountProtection.TSClaimedUserIdType : Swift.Equatable {}
 extension AccountProtection.TSClaimedUserIdType : Swift.Hashable {}
 extension AccountProtection.TSClaimedUserIdType : Swift.RawRepresentable {}
+extension AccountProtection.TSActionResult : Swift.Equatable {}
+extension AccountProtection.TSActionResult : Swift.Hashable {}
+extension AccountProtection.TSActionResult : Swift.RawRepresentable {}
+extension AccountProtection.TSChallengeType : Swift.Equatable {}
+extension AccountProtection.TSChallengeType : Swift.Hashable {}
+extension AccountProtection.TSChallengeType : Swift.RawRepresentable {}
 extension AccountProtection.TSLocationInterval : Swift.Equatable {}
 extension AccountProtection.TSLocationInterval : Swift.Hashable {}
 extension AccountProtection.TSLocationInterval : Swift.RawRepresentable {}
