@@ -5,6 +5,24 @@ toc:
 ---
 # iOS Fraud Prevention SDK Changelog
 
+## Fraud Prevention - 3.0.8 - Oct. 2026
+* feat: Added `getSecuredSessionToken(actionType:completion:)` to return the session token cryptographically bound to the device, wrapped in a JWT signed with the device's crypto-binding private key.
+
+## Fraud Prevention - 3.0.7 - Sep. 2026
+* fix: Fixed crash on printing documents on iPad.
+
+## Fraud Prevention - 3.0.6 - Sep. 2026
+* fix: React Native elements without their own `testID` now inherit the identifier from the nearest React Native parent view.
+
+## Fraud Prevention - 3.0.5 - Aug. 2026
+* feat: Added `reportActionResult()` to report the result of an action for which a recommendation was previously issued via `triggerAction()`.
+
+## Fraud Prevention - 3.0.4 - Jul. 2026
+* feat: Added Cordova support. Native behavioral collection is disabled on Cordova screens; interaction events (touch, click, input, navigation) are reported manually via `logInteractionEvent(_:)`. In mixed native and Cordova apps this is detected per screen, so native collection remains active on native screens.
+
+## Fraud Prevention - 3.0.3 - Jun. 2026
+* feat: Added Flutter support. Native behavioral collection is disabled in Flutter apps; interaction events (touch, click, input, navigation) are reported manually via `logInteractionEvent(_:)`. Added `getCollectorConfiguration()` and collector configuration listeners for cross-platform integration.
+
 ## Fraud Prevention - 3.0.2 - Jun. 2026
 * fix: Fixed a rare crash that could occur while some app resources were being released from memory.
 

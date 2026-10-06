@@ -521,6 +521,87 @@
           },
           {
             "kind": "Function",
+            "name": "reportActionResult",
+            "printedName": "reportActionResult(actionToken:result:options:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TSActionResult",
+                "printedName": "AccountProtection.TSActionResult",
+                "usr": "s:17AccountProtection14TSActionResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AccountProtection.TSActionResultOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSActionResultOptions",
+                    "printedName": "AccountProtection.TSActionResultOptions",
+                    "usr": "s:17AccountProtection21TSActionResultOptionsV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), AccountProtection.TransmitSecurityAccountProtectionError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), AccountProtection.TransmitSecurityAccountProtectionError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransmitSecurityAccountProtectionError",
+                        "printedName": "AccountProtection.TransmitSecurityAccountProtectionError",
+                        "usr": "s:17AccountProtection016TransmitSecurityaB5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB0C18reportActionResult11actionToken6result7options10completionySS_AA08TSActionF0OAA0lF7OptionsVSgys0F0OyytAA016TransmitSecurityaB5ErrorOGctFZ",
+            "mangledName": "$s17AccountProtection09TSAccountB0C18reportActionResult11actionToken6result7options10completionySS_AA08TSActionF0OAA0lF7OptionsVSgys0F0OyytAA016TransmitSecurityaB5ErrorOGctFZ",
+            "moduleName": "AccountProtection",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setAuthenticatedUser",
             "printedName": "setAuthenticatedUser(_:options:)",
             "children": [
@@ -604,6 +685,171 @@
               "RawDocComment"
             ],
             "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logInteractionEvent",
+            "printedName": "logInteractionEvent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB0C19logInteractionEventyySDySSypGKFZ",
+            "mangledName": "$s17AccountProtection09TSAccountB0C19logInteractionEventyySDySSypGKFZ",
+            "moduleName": "AccountProtection",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCollectorConfiguration",
+            "printedName": "getCollectorConfiguration()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB0C25getCollectorConfigurationSDySSypGyFZ",
+            "mangledName": "$s17AccountProtection09TSAccountB0C25getCollectorConfigurationSDySSypGyFZ",
+            "moduleName": "AccountProtection",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addCollectorConfigurationListener",
+            "printedName": "addCollectorConfigurationListener(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Any]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB0C33addCollectorConfigurationListenery10Foundation4UUIDVySDySSypGcFZ",
+            "mangledName": "$s17AccountProtection09TSAccountB0C33addCollectorConfigurationListenery10Foundation4UUIDVySDySSypGcFZ",
+            "moduleName": "AccountProtection",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeCollectorConfigurationListener",
+            "printedName": "removeCollectorConfigurationListener(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB0C36removeCollectorConfigurationListeneryy10Foundation4UUIDVFZ",
+            "mangledName": "$s17AccountProtection09TSAccountB0C36removeCollectorConfigurationListeneryy10Foundation4UUIDVFZ",
+            "moduleName": "AccountProtection",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -718,6 +964,76 @@
             "declKind": "Func",
             "usr": "s:17AccountProtection09TSAccountB0C15getSessionToken10completionyys6ResultOySSAA016TransmitSecurityaB5ErrorOGc_tFZ",
             "mangledName": "$s17AccountProtection09TSAccountB0C15getSessionToken10completionyys6ResultOySSAA016TransmitSecurityaB5ErrorOGc_tFZ",
+            "moduleName": "AccountProtection",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSecuredSessionToken",
+            "printedName": "getSecuredSessionToken(actionType:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.String, AccountProtection.TransmitSecurityAccountProtectionError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.String, AccountProtection.TransmitSecurityAccountProtectionError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransmitSecurityAccountProtectionError",
+                        "printedName": "AccountProtection.TransmitSecurityAccountProtectionError",
+                        "usr": "s:17AccountProtection016TransmitSecurityaB5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17AccountProtection09TSAccountB0C22getSecuredSessionToken10actionType10completionySSSg_ys6ResultOySSAA016TransmitSecurityaB5ErrorOGctFZ",
+            "mangledName": "$s17AccountProtection09TSAccountB0C22getSecuredSessionToken10actionType10completionySSSg_ys6ResultOySSAA016TransmitSecurityaB5ErrorOGctFZ",
             "moduleName": "AccountProtection",
             "static": true,
             "declAttributes": [
@@ -1181,6 +1497,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "zlib",
         "printedName": "zlib",
         "declKind": "Import",
@@ -1258,6 +1584,40 @@
         "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AccountProtection"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TSCoreSDK",
+        "printedName": "TSCoreSDK",
+        "declKind": "Import",
+        "moduleName": "AccountProtection"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AccountProtection"
       },
@@ -1633,6 +1993,16 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "AccountProtection",
         "declAttributes": [
@@ -2914,6 +3284,876 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSActionResult",
+        "printedName": "TSActionResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountProtection.TSActionResult.Type) -> AccountProtection.TSActionResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSActionResult",
+                    "printedName": "AccountProtection.TSActionResult",
+                    "usr": "s:17AccountProtection14TSActionResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountProtection.TSActionResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSActionResult",
+                        "printedName": "AccountProtection.TSActionResult",
+                        "usr": "s:17AccountProtection14TSActionResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17AccountProtection14TSActionResultO7successyA2CmF",
+            "mangledName": "$s17AccountProtection14TSActionResultO7successyA2CmF",
+            "moduleName": "AccountProtection"
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountProtection.TSActionResult.Type) -> AccountProtection.TSActionResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSActionResult",
+                    "printedName": "AccountProtection.TSActionResult",
+                    "usr": "s:17AccountProtection14TSActionResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountProtection.TSActionResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSActionResult",
+                        "printedName": "AccountProtection.TSActionResult",
+                        "usr": "s:17AccountProtection14TSActionResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17AccountProtection14TSActionResultO7failureyA2CmF",
+            "mangledName": "$s17AccountProtection14TSActionResultO7failureyA2CmF",
+            "moduleName": "AccountProtection"
+          },
+          {
+            "kind": "Var",
+            "name": "incomplete",
+            "printedName": "incomplete",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountProtection.TSActionResult.Type) -> AccountProtection.TSActionResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSActionResult",
+                    "printedName": "AccountProtection.TSActionResult",
+                    "usr": "s:17AccountProtection14TSActionResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountProtection.TSActionResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSActionResult",
+                        "printedName": "AccountProtection.TSActionResult",
+                        "usr": "s:17AccountProtection14TSActionResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17AccountProtection14TSActionResultO10incompleteyA2CmF",
+            "mangledName": "$s17AccountProtection14TSActionResultO10incompleteyA2CmF",
+            "moduleName": "AccountProtection"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AccountProtection.TSActionResult?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSActionResult",
+                    "printedName": "AccountProtection.TSActionResult",
+                    "usr": "s:17AccountProtection14TSActionResultO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17AccountProtection14TSActionResultO8rawValueACSgSS_tcfc",
+            "mangledName": "$s17AccountProtection14TSActionResultO8rawValueACSgSS_tcfc",
+            "moduleName": "AccountProtection",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17AccountProtection14TSActionResultO8rawValueSSvp",
+            "mangledName": "$s17AccountProtection14TSActionResultO8rawValueSSvp",
+            "moduleName": "AccountProtection",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17AccountProtection14TSActionResultO8rawValueSSvg",
+                "mangledName": "$s17AccountProtection14TSActionResultO8rawValueSSvg",
+                "moduleName": "AccountProtection",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17AccountProtection14TSActionResultO",
+        "mangledName": "$s17AccountProtection14TSActionResultO",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSChallengeType",
+        "printedName": "TSChallengeType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "smsOtp",
+            "printedName": "smsOtp",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountProtection.TSChallengeType.Type) -> AccountProtection.TSChallengeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSChallengeType",
+                    "printedName": "AccountProtection.TSChallengeType",
+                    "usr": "s:17AccountProtection15TSChallengeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountProtection.TSChallengeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSChallengeType",
+                        "printedName": "AccountProtection.TSChallengeType",
+                        "usr": "s:17AccountProtection15TSChallengeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17AccountProtection15TSChallengeTypeO6smsOtpyA2CmF",
+            "mangledName": "$s17AccountProtection15TSChallengeTypeO6smsOtpyA2CmF",
+            "moduleName": "AccountProtection"
+          },
+          {
+            "kind": "Var",
+            "name": "emailOtp",
+            "printedName": "emailOtp",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountProtection.TSChallengeType.Type) -> AccountProtection.TSChallengeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSChallengeType",
+                    "printedName": "AccountProtection.TSChallengeType",
+                    "usr": "s:17AccountProtection15TSChallengeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountProtection.TSChallengeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSChallengeType",
+                        "printedName": "AccountProtection.TSChallengeType",
+                        "usr": "s:17AccountProtection15TSChallengeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17AccountProtection15TSChallengeTypeO8emailOtpyA2CmF",
+            "mangledName": "$s17AccountProtection15TSChallengeTypeO8emailOtpyA2CmF",
+            "moduleName": "AccountProtection"
+          },
+          {
+            "kind": "Var",
+            "name": "totp",
+            "printedName": "totp",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountProtection.TSChallengeType.Type) -> AccountProtection.TSChallengeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSChallengeType",
+                    "printedName": "AccountProtection.TSChallengeType",
+                    "usr": "s:17AccountProtection15TSChallengeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountProtection.TSChallengeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSChallengeType",
+                        "printedName": "AccountProtection.TSChallengeType",
+                        "usr": "s:17AccountProtection15TSChallengeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17AccountProtection15TSChallengeTypeO4totpyA2CmF",
+            "mangledName": "$s17AccountProtection15TSChallengeTypeO4totpyA2CmF",
+            "moduleName": "AccountProtection"
+          },
+          {
+            "kind": "Var",
+            "name": "pushOtp",
+            "printedName": "pushOtp",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountProtection.TSChallengeType.Type) -> AccountProtection.TSChallengeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSChallengeType",
+                    "printedName": "AccountProtection.TSChallengeType",
+                    "usr": "s:17AccountProtection15TSChallengeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountProtection.TSChallengeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSChallengeType",
+                        "printedName": "AccountProtection.TSChallengeType",
+                        "usr": "s:17AccountProtection15TSChallengeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17AccountProtection15TSChallengeTypeO7pushOtpyA2CmF",
+            "mangledName": "$s17AccountProtection15TSChallengeTypeO7pushOtpyA2CmF",
+            "moduleName": "AccountProtection"
+          },
+          {
+            "kind": "Var",
+            "name": "voiceOtp",
+            "printedName": "voiceOtp",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountProtection.TSChallengeType.Type) -> AccountProtection.TSChallengeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSChallengeType",
+                    "printedName": "AccountProtection.TSChallengeType",
+                    "usr": "s:17AccountProtection15TSChallengeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountProtection.TSChallengeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSChallengeType",
+                        "printedName": "AccountProtection.TSChallengeType",
+                        "usr": "s:17AccountProtection15TSChallengeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17AccountProtection15TSChallengeTypeO8voiceOtpyA2CmF",
+            "mangledName": "$s17AccountProtection15TSChallengeTypeO8voiceOtpyA2CmF",
+            "moduleName": "AccountProtection"
+          },
+          {
+            "kind": "Var",
+            "name": "idv",
+            "printedName": "idv",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountProtection.TSChallengeType.Type) -> AccountProtection.TSChallengeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSChallengeType",
+                    "printedName": "AccountProtection.TSChallengeType",
+                    "usr": "s:17AccountProtection15TSChallengeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountProtection.TSChallengeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSChallengeType",
+                        "printedName": "AccountProtection.TSChallengeType",
+                        "usr": "s:17AccountProtection15TSChallengeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17AccountProtection15TSChallengeTypeO3idvyA2CmF",
+            "mangledName": "$s17AccountProtection15TSChallengeTypeO3idvyA2CmF",
+            "moduleName": "AccountProtection"
+          },
+          {
+            "kind": "Var",
+            "name": "captcha",
+            "printedName": "captcha",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountProtection.TSChallengeType.Type) -> AccountProtection.TSChallengeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSChallengeType",
+                    "printedName": "AccountProtection.TSChallengeType",
+                    "usr": "s:17AccountProtection15TSChallengeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountProtection.TSChallengeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSChallengeType",
+                        "printedName": "AccountProtection.TSChallengeType",
+                        "usr": "s:17AccountProtection15TSChallengeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17AccountProtection15TSChallengeTypeO7captchayA2CmF",
+            "mangledName": "$s17AccountProtection15TSChallengeTypeO7captchayA2CmF",
+            "moduleName": "AccountProtection"
+          },
+          {
+            "kind": "Var",
+            "name": "password",
+            "printedName": "password",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountProtection.TSChallengeType.Type) -> AccountProtection.TSChallengeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSChallengeType",
+                    "printedName": "AccountProtection.TSChallengeType",
+                    "usr": "s:17AccountProtection15TSChallengeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountProtection.TSChallengeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSChallengeType",
+                        "printedName": "AccountProtection.TSChallengeType",
+                        "usr": "s:17AccountProtection15TSChallengeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17AccountProtection15TSChallengeTypeO8passwordyA2CmF",
+            "mangledName": "$s17AccountProtection15TSChallengeTypeO8passwordyA2CmF",
+            "moduleName": "AccountProtection"
+          },
+          {
+            "kind": "Var",
+            "name": "passkey",
+            "printedName": "passkey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AccountProtection.TSChallengeType.Type) -> AccountProtection.TSChallengeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSChallengeType",
+                    "printedName": "AccountProtection.TSChallengeType",
+                    "usr": "s:17AccountProtection15TSChallengeTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AccountProtection.TSChallengeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TSChallengeType",
+                        "printedName": "AccountProtection.TSChallengeType",
+                        "usr": "s:17AccountProtection15TSChallengeTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17AccountProtection15TSChallengeTypeO7passkeyyA2CmF",
+            "mangledName": "$s17AccountProtection15TSChallengeTypeO7passkeyyA2CmF",
+            "moduleName": "AccountProtection"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AccountProtection.TSChallengeType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSChallengeType",
+                    "printedName": "AccountProtection.TSChallengeType",
+                    "usr": "s:17AccountProtection15TSChallengeTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17AccountProtection15TSChallengeTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s17AccountProtection15TSChallengeTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "AccountProtection",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17AccountProtection15TSChallengeTypeO8rawValueSSvp",
+            "mangledName": "$s17AccountProtection15TSChallengeTypeO8rawValueSSvp",
+            "moduleName": "AccountProtection",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17AccountProtection15TSChallengeTypeO8rawValueSSvg",
+                "mangledName": "$s17AccountProtection15TSChallengeTypeO8rawValueSSvg",
+                "moduleName": "AccountProtection",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17AccountProtection15TSChallengeTypeO",
+        "mangledName": "$s17AccountProtection15TSChallengeTypeO",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TSActionResultOptions",
+        "printedName": "TSActionResultOptions",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(challengeType:userId:privateUserIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TSActionResultOptions",
+                "printedName": "AccountProtection.TSActionResultOptions",
+                "usr": "s:17AccountProtection21TSActionResultOptionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AccountProtection.TSChallengeType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TSChallengeType",
+                    "printedName": "AccountProtection.TSChallengeType",
+                    "usr": "s:17AccountProtection15TSChallengeTypeO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17AccountProtection21TSActionResultOptionsV13challengeType6userId21privateUserIdentifierAcA011TSChallengeG0OSg_SSSgAJtcfc",
+            "mangledName": "$s17AccountProtection21TSActionResultOptionsV13challengeType6userId21privateUserIdentifierAcA011TSChallengeG0OSg_SSSgAJtcfc",
+            "moduleName": "AccountProtection",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17AccountProtection21TSActionResultOptionsV",
+        "mangledName": "$s17AccountProtection21TSActionResultOptionsV",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -4868,6 +6108,7 @@
         "mangledName": "$s17AccountProtection10JWTDecoderC",
         "moduleName": "AccountProtection",
         "declAttributes": [
+          "Final",
           "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true,
@@ -4885,7 +6126,24 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -5088,6 +6346,16 @@
         "printedName": "TSCoreSDK",
         "declKind": "Import",
         "moduleName": "AccountProtection"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -6015,6 +7283,23 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AccountProtection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TSCoreSDK",
+        "printedName": "TSCoreSDK",
+        "declKind": "Import",
+        "moduleName": "AccountProtection"
       }
     ],
     "json_format_version": 8
@@ -6219,93 +7504,142 @@
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 826,
+      "offset": 859,
+      "length": 15,
+      "value": "\"action_result\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 934,
       "length": 16,
       "value": "\"identification\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 950,
+      "offset": 1058,
       "length": 13,
       "value": "\"interaction\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 1111,
+      "offset": 1219,
       "length": 10,
       "value": "\"location\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7459,
+      "offset": 8218,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7600,
+      "offset": 8359,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 22032,
+      "offset": 24050,
       "length": 13,
       "value": "\"action_type\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 22078,
+      "offset": 24096,
       "length": 19,
       "value": "\"custom_attributes\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 22127,
+      "offset": 24145,
       "length": 16,
       "value": "\"correlation_id\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 22173,
+      "offset": 24191,
       "length": 17,
       "value": "\"claimed_user_id\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 22224,
+      "offset": 24242,
       "length": 22,
       "value": "\"claimed_user_id_type\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 22278,
+      "offset": 24296,
       "length": 19,
       "value": "\"reference_user_id\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 22329,
+      "offset": 24347,
       "length": 17,
       "value": "\"transactionData\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
       "kind": "StringLiteral",
-      "offset": 22375,
+      "offset": 24393,
       "length": 14,
       "value": "\"locationData\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 25113,
+      "length": 14,
+      "value": "\"action_token\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 25158,
+      "length": 17,
+      "value": "\"result_feedback\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 25205,
+      "length": 16,
+      "value": "\"challenge_type\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 25244,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventsManager.swift",
+      "kind": "StringLiteral",
+      "offset": 25291,
+      "length": 23,
+      "value": "\"privateUserIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Events\/TSEventIndexProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1309,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Utils\/Extensions\/Data+Gzip.swift",
@@ -6397,6 +7731,20 @@
       "offset": 268,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSCollectorConfigurationBridge.swift",
+      "kind": "Array",
+      "offset": 2489,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/Utils\/RawInteractionEventConverter.swift",
+      "kind": "StringLiteral",
+      "offset": 254,
+      "length": 18,
+      "value": "\"interaction_type\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/DeviceMetadataCollector\/TSDeviceMetadataCollector.swift",
@@ -6659,15 +8007,99 @@
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 3027,
+      "length": 9,
+      "value": "\"success\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 3056,
+      "length": 9,
+      "value": "\"failure\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 3088,
+      "length": 12,
+      "value": "\"incomplete\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 3267,
+      "length": 9,
+      "value": "\"sms_otp\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 3297,
+      "length": 11,
+      "value": "\"email_otp\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 3325,
+      "length": 6,
+      "value": "\"totp\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 3351,
+      "length": 10,
+      "value": "\"push_otp\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 3382,
+      "length": 11,
+      "value": "\"voice_otp\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 3409,
+      "length": 5,
+      "value": "\"idv\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 3434,
+      "length": 9,
+      "value": "\"captcha\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 3464,
+      "length": 10,
+      "value": "\"password\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 3494,
+      "length": 9,
+      "value": "\"passkey\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
       "kind": "IntegerLiteral",
-      "offset": 5853,
+      "offset": 7040,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionTypes.swift",
       "kind": "IntegerLiteral",
-      "offset": 5911,
+      "offset": 7098,
       "length": 2,
       "value": "-1"
     },
@@ -6688,35 +8120,35 @@
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1824,
+      "offset": 2003,
       "length": 10,
       "value": "\"tenantId\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1890,
+      "offset": 2069,
       "length": 9,
       "value": "\"package\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1953,
+      "offset": 2132,
       "length": 7,
       "value": "\"build\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2013,
+      "offset": 2192,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/syncData\/server\/TSConfigurationServerFetchingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2048,
+      "offset": 2227,
       "length": 6,
       "value": "\"conf\""
     },
@@ -6737,14 +8169,14 @@
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 9388,
+      "offset": 8245,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/TSGestureRecognizers\/TSMonitors\/TSGestureMonitor.swift",
       "kind": "Array",
-      "offset": 12408,
+      "offset": 11253,
       "length": 42,
       "value": "[\"button\", \"UIAlertControllerActionView\"]"
     },
@@ -6778,15 +8210,29 @@
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionController.swift",
+      "kind": "Array",
+      "offset": 381,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionController.swift",
+      "kind": "Array",
+      "offset": 516,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionController.swift",
       "kind": "BooleanLiteral",
-      "offset": 593,
+      "offset": 607,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/API\/TSAccountProtectionController.swift",
       "kind": "BooleanLiteral",
-      "offset": 639,
+      "offset": 653,
       "length": 5,
       "value": "false"
     },
@@ -6831,6 +8277,20 @@
       "offset": 906,
       "length": 43,
       "value": "\"com.transmitsecurity.calldetection.events\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/CrossPlatformDetection\/FlutterDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 233,
+      "length": 23,
+      "value": "\"FlutterViewController\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/CrossPlatformDetection\/FlutterDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 301,
+      "length": 15,
+      "value": "\"FlutterEngine\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/TSCollector\/TSCollector.swift",
@@ -6922,6 +8382,13 @@
       "offset": 395,
       "length": 1,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Collectors\/InteractionCollector\/CrossPlatformDetection\/CordovaDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 233,
+      "length": 19,
+      "value": "\"CDVViewController\""
     },
     {
       "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/Configuration\/observers\/TSConfigurationObserver.swift",
@@ -7244,6 +8711,34 @@
       "offset": 7606,
       "length": 19,
       "value": "\"accessibilty_name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/SecuredSessionToken\/TSSecuredSessionTokenBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1469,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/SecuredSessionToken\/TSSecuredSessionTokenBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1474,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/SecuredSessionToken\/TSSecuredSessionTokenBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1506,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/actions-runner\/_work\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-demo-app\/riskid-ios-sdk\/AccountProtection\/AccountProtection\/SecuredSessionToken\/TSSecuredSessionTokenBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6963,
+      "length": 2,
+      "value": "32"
     }
   ]
 }
